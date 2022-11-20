@@ -1,0 +1,37 @@
+@use '../../index.scss' as *;
+
+header{
+    @include Flex(row,center,space-between,30px);
+    min-height: 50px;
+    .header-contact-info{
+        @include Flex(row,center,center,0px);
+        gap: 50px;
+        div{
+            @include Flex(row,center,center,0px);
+            gap: 10px;
+        }
+        @include Media(md){
+            width: 100%;
+            @include Flex(row,center,space-between,0px);
+        }
+    }
+    .header-offers-mess{
+        @include Media(md){
+            display: none;
+        }
+    }
+    .header-social-icons{
+        @include Flex(row,center,center,0px);
+        gap: 10px;
+        height: 30px;
+        line-height: 20px;
+        @include Media(md){
+            display: none;
+        }
+        .header-social-links{
+            @include Flex(row,center,center,0px);
+            padding-top: 8px;
+            gap: 10px;
+        }
+    }
+}

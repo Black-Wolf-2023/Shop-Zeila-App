@@ -1,0 +1,14 @@
+{
+    "data":{
+        "email":"abdo.eslam2022@gmail.com",
+        "phone":"(+20) 1022570632",
+        "images__src":{
+            "phone":"./page-1-assets/icons/phone-outline.png",
+            "email":"./page-1-assets/icons/email-outline.png",
+            "facebook":"./page-1-assets/icons/facebook-full.png" ,
+            "twitter":"./page-1-assets/icons/twitter-full.png" ,
+            "youtube":"./page-1-assets/icons/youtube-full.png",
+            "instagram":"./page-1-assets/icons/instagram-outline.png"
+        }
+    }
+}

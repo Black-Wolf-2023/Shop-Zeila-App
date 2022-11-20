@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;900&display=swap');
+//======= Variables =======> 
+$light-blue-color-1 : #2C5592;
+$light-blue-color-2 : #23A6F0;
+$purper-color:#977DF4;
+$gray-color:#737373;
+$white-color:#fff;
+$dark-blue-color:#252B42;
+$dark-blue-color-2:#131726;
+$colors-list:(
+"light-blue-1" : $light-blue-color-1,
+"light-blue-2" : $light-blue-color-2,
+"dark-blue-2" : $dark-blue-color-2, 
+"dark-blue": $dark-blue-color,
+"purper" : $purper-color,
+"gray-1" : $gray-color, 
+"white-1": $white-color
+);
+$font-weight:400,500,700,900;
+//====== Global-Styles ========> 
+
+*,*::after,*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Tajawal', sans-serif;
+}
+@for $size from 14 to 30 {
+    .size-#{$size}{
+        font-size: $size + px;
+    }
+}
+@each $font in $font-weight {
+    .font-#{$font}{
+        font-weight: $font;
+    }
+}
+@each $name,$value in $colors-list {
+    .bg-#{$name}{
+        background-color: $value;
+    }
+    .text-#{$name}{
+        color: $value;
+    }
+}
+//====== Global-Mixin-Media ========> 
+
+@mixin Flex($dir,$alin,$just,$space) {
+    display: flex;
+    justify-content: $just;
+    align-items: $alin;
+    padding: 0 $space;
+}
+
+@mixin Media ($size){
+    @if $size == "sm"{
+        @media screen and (max-width:567px) {
+            @content
+        }
+    }@else if $size == "md" {
+        @media screen and (max-width:967px) {
+            @content
+        }
+    }@else if $size == "mx" {
+        @media screen and (max-width:1267px) {
+            @content
+        }
+    }@else{
+        @media screen and (min-width:1268px) {
+            @content
+        }
+    }
+}
