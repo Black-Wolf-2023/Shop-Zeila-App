@@ -8,7 +8,13 @@
             "facebook":"./page-1-assets/icons/facebook-full.png" ,
             "twitter":"./page-1-assets/icons/twitter-full.png" ,
             "youtube":"./page-1-assets/icons/youtube-full.png",
-            "instagram":"./page-1-assets/icons/instagram-outline.png"
+            "instagram":"./page-1-assets/icons/instagram-outline.png",
+            "user":"./page-1-assets/icons/user-outline.png",
+            "logo":"./Logo.svg",
+            "search":"./page-1-assets/icons/search-outline.png",
+            "shopping":"./page-1-assets/icons/shop-outline.png",
+            "heart":"./page-1-assets/icons/heart-outline.png"
+
         }
     }
 }

@@ -24,7 +24,9 @@ $font-weight:400,500,700,900;
     margin: 0;
     box-sizing: border-box;
     list-style: none;
+    text-decoration: none;
     font-family: 'Tajawal', sans-serif;
+    transition: all ease .4s;
 }
 @for $size from 14 to 30 {
     .size-#{$size}{
@@ -44,10 +46,14 @@ $font-weight:400,500,700,900;
         color: $value;
     }
 }
+a,button{
+    cursor: pointer;
+}
 //====== Global-Mixin-Media ========> 
 
 @mixin Flex($dir,$alin,$just,$space) {
     display: flex;
+     flex-direction: $dir;
     justify-content: $just;
     align-items: $alin;
     padding: 0 $space;

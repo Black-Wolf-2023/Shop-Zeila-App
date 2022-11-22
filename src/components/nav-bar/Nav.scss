@@ -1,0 +1,90 @@
+@use "../../index.scss" as *;
+
+nav{
+    @include Flex(row,center,space-between,30px);
+    height: 90px;
+    .nav-links{
+          .nav-logo{
+            @include Flex(row,center,flex-start,0px);
+            height:80px;
+        }
+          @include Flex(row,center,flex-start,0px);
+          gap: 200px;
+      ul{
+          @include Flex(row,center,flex-start,0px);
+          gap: 30px;
+          li{
+            a{
+                color: $dark-blue-color;
+            }
+            .active-link{
+                border: 2px solid $light-blue-color-2;
+                color: $light-blue-color-2;
+                background-color: transparent;
+                padding: 5px 10px;
+                border-radius: 5px;
+            }
+            .active-link:hover{
+                background-color: $light-blue-color-2;
+                color: $dark-blue-color-2;  
+            }
+          }
+       }
+    }
+    .nav-info{
+        @include Flex(row,center,flex-start,0px);
+        gap: 20px;
+        .nav-register{
+            a{
+                margin: 10px;
+                &:hover{
+                    color: $light-blue-color-2;
+                }
+            }
+        }
+        .nav-controller{
+            @include Flex(row,center,center,0px);
+            gap: 30px;
+            button{
+                background-color: transparent;
+                border: 0;
+                outline: 0;
+            }
+            :nth-child(2) button::after,:last-child button::after{
+                content: attr(box-data);
+                position: absolute;
+                width: 17px;
+                height: 17px;
+                border-radius: 50%;
+                color: $white-color;
+                background-color:$light-blue-color-2;
+                cursor: pointer;
+            }
+        }
+        .nav-controller{
+            @include Flex(row,center,center,0px);
+        }
+    }
+}
+.sm-nav{
+    position: fixed;
+    top: 50px;
+    bottom: 0;
+    left: 0;
+    width: 200px;
+    @include Flex(column,flex-start,space-between,0px);
+    padding: 30px;
+
+    ul{
+        @include Flex(column,flex-start,flex-start,0px);
+        gap: 30px;
+        li{
+            a{
+             color: $white-color;
+            }
+        }
+        margin-top: 50px;
+    }
+    background-color: $dark-blue-color;
+    color: $white-color;
+}
