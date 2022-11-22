@@ -78,3 +78,15 @@ a,button{
         }
     }
 }
+//========== Animation ============>
+@keyframes arrowAnimater{
+    0%{
+       transform: translateX(-50px);
+       opacity: .1;
+   }
+
+   100%{
+       transform: translateX(0px);
+       opacity: 1;
+   }
+}

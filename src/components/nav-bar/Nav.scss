@@ -1,21 +1,31 @@
 @use "../../index.scss" as *;
 
 nav{
-    @include Flex(row,center,space-between,30px);
+    @include Flex(row,center,space-evenly,30px);
     height: 90px;
     .nav-links{
+        flex-grow: 1;
           .nav-logo{
-            @include Flex(row,center,flex-start,0px);
+            @include Flex(row,center,center,0px);
             height:80px;
         }
           @include Flex(row,center,flex-start,0px);
           gap: 200px;
+          @include Media(mx){
+            gap: 100px;
+          }
       ul{
           @include Flex(row,center,flex-start,0px);
           gap: 30px;
+          @include Media(md){
+            display: none;
+          }
           li{
             a{
                 color: $dark-blue-color;
+                &:hover{
+                    color: $light-blue-color-2;
+                }
             }
             .active-link{
                 border: 2px solid $light-blue-color-2;
@@ -35,11 +45,16 @@ nav{
         @include Flex(row,center,flex-start,0px);
         gap: 20px;
         .nav-register{
+            color: $light-blue-color-2;
             a{
                 margin: 10px;
+                color: $light-blue-color-2;
                 &:hover{
                     color: $light-blue-color-2;
                 }
+            }
+            @include Media(md){
+                display: none;
             }
         }
         .nav-controller{
@@ -50,7 +65,7 @@ nav{
                 border: 0;
                 outline: 0;
             }
-            :nth-child(2) button::after,:last-child button::after{
+            :nth-child(2) button::after,:nth-child(3) button::after{
                 content: attr(box-data);
                 position: absolute;
                 width: 17px;
@@ -70,21 +85,83 @@ nav{
     position: fixed;
     top: 50px;
     bottom: 0;
-    left: 0;
-    width: 200px;
+    left: -290px;
+    width: 300px;
     @include Flex(column,flex-start,space-between,0px);
-    padding: 30px;
+    padding: 20px;
+    z-index: 100;
 
     ul{
         @include Flex(column,flex-start,flex-start,0px);
         gap: 30px;
+        width: 100%;
         li{
+            width: 100%;
             a{
+             width: 100%;
              color: $white-color;
+             background-color: $dark-blue-color-2;
+             padding: 10px;
+             display: inline-block;
+             text-align: center;
+             border-radius: 10px;
+            }
+            a:hover{
+                background-color: $white-color;
+                color: $dark-blue-color;
+            }
+            .active-sm-link{
+                background-color: $white-color;
+                color: $dark-blue-color;
             }
         }
         margin-top: 50px;
     }
     background-color: $dark-blue-color;
     color: $white-color;
+    .sm-nav-info{
+        @include Flex(column,center,center,0px);
+        gap: 50px;
+        a{
+            color: $white-color;
+            margin:10px;
+            &:hover{
+                color: $light-blue-color-2;
+            }
+        }
+        width: 100%;
+    }
+
+    .sm-toggler-icon{
+        background-color: $dark-blue-color;
+        width: 35px;
+        height: 35px;
+        cursor: pointer;
+        padding: 5px;
+        position: absolute;
+        right: -10%;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: -1;
+        overflow: hidden;
+        border-top-right-radius: 40px;
+        border-bottom-right-radius: 40px;
+        img{
+            width: 25px;
+            object-fit: cover;
+            position: absolute;
+            animation: arrowAnimater ease-in 1s infinite;
+            transform: translateX(-100px);
+        }
+        & img:nth-child(1){
+            animation-delay: .1s;
+        }
+        & img:nth-child(2){
+            animation-delay: .2s;
+        }
+        & img:nth-child(3){
+            animation-delay: .3s;
+        }
+    }
 }
+

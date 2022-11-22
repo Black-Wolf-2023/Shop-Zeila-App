@@ -15,7 +15,7 @@ export const Nav = () => {
              <li><Link>About</Link></li>
              <li><Link>Blog</Link></li>
              <li><Link>Pages</Link></li>
-             <li><Link>Contact</Link></li>
+             <li><Link>Contact </Link></li>
            </ul>
        </div>
        <div className='nav-info'>
@@ -29,7 +29,7 @@ export const Nav = () => {
     </nav>
     <div className='sm-nav'>
          <ul className='font-700 size-18'>
-             <li><Link className='active-link'>Home</Link></li>
+             <li><Link className='active-sm-link'>Home</Link></li>
              <li><Link>Shope</Link></li>
              <li><Link>About</Link></li>
              <li><Link>Blog</Link></li>
@@ -40,6 +40,11 @@ export const Nav = () => {
              <div className='nav-register font-700 size-18'><img src={data.data.images__src.user} alt="" /><Link>Login</Link> / <Link>Register</Link></div>
              <div className='nav-logo'><img src={data.data.images__src.logo} alt="" width='60px' height='60px'/></div>
            </div>
+           <div className='sm-toggler-icon'>
+            <img src={data.data.images__src.arrow__right} alt="" />
+            <img src={data.data.images__src.arrow__right} alt="" />
+            <img src={data.data.images__src.arrow__right} alt="" />
+          </div>
      </div>
   </>
   )

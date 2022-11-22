@@ -2,6 +2,9 @@
 
 header{
     @include Flex(row,center,space-between,30px);
+    @include Media(sm){
+        padding: 0 10px;
+    }
     min-height: 50px;
     .header-contact-info{
         @include Flex(row,center,center,0px);
@@ -13,6 +16,9 @@ header{
         @include Media(md){
             width: 100%;
             @include Flex(row,center,space-between,0px);
+        }
+        @include Media(sm){
+            font-size: .8rem;
         }
     }
     .header-offers-mess{
