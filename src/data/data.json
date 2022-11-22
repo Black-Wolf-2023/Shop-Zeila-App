@@ -14,7 +14,8 @@
             "search":"./page-1-assets/icons/search-outline.png",
             "shopping":"./page-1-assets/icons/shop-outline.png",
             "heart":"./page-1-assets/icons/heart-outline.png",
-            "arrow__right":"./page-1-assets/icons/arrow-right.png"
+            "arrow__right":"./page-1-assets/icons/arrow-right.png",
+            "hero":"./page-1-assets/main/hero-cover-1.svg"
 
         }
     }

@@ -1,16 +1,12 @@
 import React from 'react'
-import { Route, Routes } from 'react-router-dom'
-import { Header } from '../header/Header'
-import { Nav } from '../nav-bar/Nav'
+import { Hero } from '../../pages/main-page/components/hero/Hero'
+
+
 
 export const Home = () => {
   return (
     <>
-      <Header/>
-      <Nav/>
-      <Routes>
-        <Route path='/' element = {<Home/>}/>
-      </Routes>
+     <Hero/>
     </>
   )
 }

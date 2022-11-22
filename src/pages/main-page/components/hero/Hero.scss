@@ -1,0 +1,58 @@
+@use '../../../../index.scss' as *;
+
+main{
+    padding: 0 30px;
+    .main-container{
+        background-color: $light-blue-color-2;
+        @include Flex(row,flex-start,flex-start,0);
+        width: 90%;
+        margin: 0 auto;
+        min-height: 650px;
+        border-radius: 20px;
+        position: relative;
+        .main-text{
+            width: 50%;
+            height: 600px;
+            @include Flex(column,flex-start,center,0px);
+            padding: 100px;
+            span{
+                color: $white-color;
+                font-weight: 700;
+                font-size: 1.2rem;
+            }
+            h1{
+                font-size: 4rem;
+                margin: 20px 0;
+            }
+            p{
+                width: 300px;
+                color: $gray-color;
+                font-size: 1.2rem;
+                margin: 15px 0;
+            }
+            button{
+                padding: 10px 30px;
+                font-size: 1.3rem;
+                font-weight: 500;
+                outline: 0;
+                border: 0;
+                background-color: $dark-blue-color-2;
+                color: $white-color;
+                border-radius: 5px;
+                &:hover{
+                    background-color: $white-color;
+                    color: $dark-blue-color;
+                }
+            }
+        }
+        .main-img{
+            position: absolute;
+            right: -100px;
+            bottom: -5px;
+            width: 730px;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
