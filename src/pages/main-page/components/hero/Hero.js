@@ -6,7 +6,7 @@ export const Hero = () => {
     const [date,setDate] = useState(new Date())
   return (
     <main>
-        <div className='main-container'>
+        <div className='main-container container'>
             <div className='main-text'>
                 <span>SUMMER {date.getFullYear()}</span>
                 <h1>NEW COLLECTION</h1>

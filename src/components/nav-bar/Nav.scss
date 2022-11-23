@@ -3,6 +3,7 @@
 nav{
     @include Flex(row,center,space-evenly,30px);
     height: 90px;
+    background-color: $white-color;
     .nav-links{
         flex-grow: 1;
           .nav-logo{

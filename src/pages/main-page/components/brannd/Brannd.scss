@@ -1,0 +1,58 @@
+@use '../../../../index.scss' as *;
+#brannd-warbber{
+    background-color: $white-color;
+    padding: 30px 0;
+    .brannd{
+        .banner-animater .brannd-img:nth-child(1) img{
+            animation-delay: .1s;
+        }
+
+        .banner-animater .brannd-img:nth-child(2) img{
+            animation-delay: .5s;
+        }
+
+        .banner-animater .brannd-img:nth-child(3) img{
+            animation-delay: 1s;
+        }
+
+        .banner-animater .brannd-img:nth-child(4) img{
+            animation-delay: 1.5s;
+        }
+
+        .banner-animater .brannd-img:nth-child(5) img{
+            animation-delay: 2s;
+        }
+
+        .banner-animater .brannd-img:nth-child(6) img{
+            animation-delay: 2.5s;
+        }
+        .banner-animater .brannd-img img{
+            animation: branndAnimater 1s ease-in alternate-reverse ;
+        }
+        .brannds-imgs{
+            width: 80%;
+            margin: 0 auto;
+            min-height: 150px;
+            cursor: pointer;
+            @include Flex(row,center,space-between,0);
+            @include Media('md'){
+                margin-top: 50px;
+                @include Flex(column,center,space-between,0);
+                gap: 50px;
+            }
+            @include Media('sm'){
+                margin-top: 50px;
+                @include Flex(column,center,space-between,0);
+                gap: 50px;
+            }
+            @keyframes branndAnimater {
+                from{
+                    transform: scale(1,1);
+                }
+                to{
+                    transform: scale(1.2,1.2);
+                }
+            }
+        }
+    }   
+}

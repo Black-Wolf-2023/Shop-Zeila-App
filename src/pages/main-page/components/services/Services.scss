@@ -1,0 +1,14 @@
+@use "../../../../index.scss" as *;
+
+.services{
+    @include Flex(row,center,center,0);
+    .cards-warbber{
+        width: 70%;
+        @include Flex(row,center,space-between,0);
+        flex-wrap: wrap;
+        @include Media(md){
+            gap: 100px;
+            justify-content: center;
+        }
+    }
+}

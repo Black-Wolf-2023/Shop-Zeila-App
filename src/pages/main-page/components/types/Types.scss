@@ -1,0 +1,47 @@
+@use "../../../../index.scss" as * ;
+
+%Btn{
+    position: absolute;
+    border: 0;
+    outline: 0;
+    padding: 10px 30px;
+    background-color: $white-color;
+    color: $dark-blue-color-2;
+    bottom: 20px;
+    left: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 5px;
+    &:hover{
+        background-color: $dark-blue-color-2;
+        color: $white-color;
+    }
+}
+
+.types{
+    @include Flex(row,center,center,0);
+    gap: 10px;
+    flex-wrap: wrap;
+    .types-warbber{
+        @include Flex(column,center,center,0);
+        gap: 10px;
+        .types-card{
+            position: relative;
+            button{
+                @extend%Btn;
+            }
+            img{
+                width: 100%;
+            }
+        }
+    }
+     .types-card{
+       position: relative;
+       img{
+        width: 100%;
+       }
+       button{
+        @extend %Btn;
+       }
+    }
+}

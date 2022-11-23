@@ -17,40 +17,12 @@ $colors-list:(
 "white-1": $white-color
 );
 $font-weight:400,500,700,900;
-//====== Global-Styles ========> 
 
-*,*::after,*::before{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
-    font-family: 'Tajawal', sans-serif;
-    transition: all ease .4s;
-}
-@for $size from 14 to 30 {
-    .size-#{$size}{
-        font-size: $size + px;
-    }
-}
-@each $font in $font-weight {
-    .font-#{$font}{
-        font-weight: $font;
-    }
-}
-@each $name,$value in $colors-list {
-    .bg-#{$name}{
-        background-color: $value;
-    }
-    .text-#{$name}{
-        color: $value;
-    }
-}
-a,button{
-    cursor: pointer;
-}
 //====== Global-Mixin-Media ========> 
-
+body{
+    min-height: 20000px;
+    background-color: #f8f8f8;
+}
 @mixin Flex($dir,$alin,$just,$space) {
     display: flex;
      flex-direction: $dir;
@@ -89,4 +61,45 @@ a,button{
        transform: translateX(0px);
        opacity: 1;
    }
+}
+
+//====== Global-Styles ========> 
+
+*,*::after,*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Tajawal', sans-serif;
+    transition: all ease .4s;
+}
+
+@for $size from 14 to 30 {
+    .size-#{$size}{
+        font-size: $size + px;
+    }
+}
+@each $font in $font-weight {
+    .font-#{$font}{
+        font-weight: $font;
+    }
+}
+@each $name,$value in $colors-list {
+    .bg-#{$name}{
+        background-color: $value;
+    }
+    .text-#{$name}{
+        color: $value;
+    }
+}
+a,button{
+    cursor: pointer;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+    @include Media(sm){
+        width: 100%;
+    }
 }

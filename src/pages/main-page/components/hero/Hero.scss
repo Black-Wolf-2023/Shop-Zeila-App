@@ -1,31 +1,31 @@
 @use '../../../../index.scss' as *;
 
 main{
-    padding: 0 30px;
+    background-color: $white-color;
     .main-container{
         background-color: $light-blue-color-2;
         @include Flex(row,flex-start,flex-start,0);
-        width: 90%;
-        margin: 0 auto;
         min-height: 650px;
         border-radius: 20px;
         position: relative;
-        @include Media(sm){
+        @include Media(mx){
+            overflow: hidden;
             width: 100%;
-        }
-
+            border-radius: 0;
+        }  
         .main-text{
             width: 50%;
             height: 600px;
             @include Flex(column,flex-start,center,0px);
             padding: 100px;
-            @include Media(sm){
-                width: 100%;
-                padding: 20px;
-            }
             @include Media(md){
                 width: 100%;
                 padding: 70px;
+            }
+
+            @include Media(sm){
+                width: 100%;
+                padding: 50px;
             }
             span{
                 color: $white-color;
@@ -65,7 +65,7 @@ main{
         }
         .main-img{
             position: absolute;
-            right: -100px;
+            right: -80px;
             bottom: -5px;
             width: 730px;
             @include Media(md){

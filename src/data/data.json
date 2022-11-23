@@ -15,8 +15,22 @@
             "shopping":"./page-1-assets/icons/shop-outline.png",
             "heart":"./page-1-assets/icons/heart-outline.png",
             "arrow__right":"./page-1-assets/icons/arrow-right.png",
-            "hero":"./page-1-assets/main/hero-cover-1.svg"
+            "hero":"./page-1-assets/main/hero-cover-1.svg",
+            "brannd__1":"./page-1-assets/icons/fa-brands-1.png",
+            "brannd__2":"./page-1-assets/icons/fa-brands-2.png",
+            "brannd__3":"./page-1-assets/icons/fa-brands-3.png",
+            "brannd__4":"./page-1-assets/icons/fa-brands-4.png",
+            "brannd__5":"./page-1-assets/icons/fa-brands-5.png",
+            "brannd__6":"./page-1-assets/icons/fa-brands-6.png",
+            "card-1":"./page-1-assets/main/card-cover-1.jpg",
+            "card-2":"./page-1-assets/main/card-cover-2.jpg",
+            "card-3":"./page-1-assets/main/card-cover-3.jpg",
+            "card-4":"./page-1-assets/main/card-cover-4.jpg",
+            "book__1":"./page-1-assets/icons/bx_bxs-book-reader.png",
+            "book__2":"./page-1-assets/icons/carbon_book.png",
+            "growth__arrow":"./page-1-assets/icons/uil_arrow-growth.png"
 
         }
     }
 }
+
