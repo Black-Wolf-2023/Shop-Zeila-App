@@ -29,13 +29,14 @@ nav{
             }
             .active-link{
                 border: 2px solid $light-blue-color-2;
-                color: $light-blue-color-2;
+                color: $white-color;
                 background-color: transparent;
                 padding: 5px 10px;
                 border-radius: 5px;
+                background-color: $light-blue-color-2;
             }
             .active-link:hover{
-                background-color: $light-blue-color-2;
+                background-color: transparent;
                 color: $dark-blue-color-2;  
             }
           }

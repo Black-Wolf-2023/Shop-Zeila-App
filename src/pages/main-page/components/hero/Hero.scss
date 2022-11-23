@@ -10,11 +10,23 @@ main{
         min-height: 650px;
         border-radius: 20px;
         position: relative;
+        @include Media(sm){
+            width: 100%;
+        }
+
         .main-text{
             width: 50%;
             height: 600px;
             @include Flex(column,flex-start,center,0px);
             padding: 100px;
+            @include Media(sm){
+                width: 100%;
+                padding: 20px;
+            }
+            @include Media(md){
+                width: 100%;
+                padding: 70px;
+            }
             span{
                 color: $white-color;
                 font-weight: 700;
@@ -23,6 +35,9 @@ main{
             h1{
                 font-size: 4rem;
                 margin: 20px 0;
+                @include Media(sm){
+                    font-size: 3rem;
+                }
             }
             p{
                 width: 300px;
@@ -43,6 +58,9 @@ main{
                     background-color: $white-color;
                     color: $dark-blue-color;
                 }
+                @include Media(sm){
+                    font-size: 1rem;
+                }
             }
         }
         .main-img{
@@ -50,6 +68,9 @@ main{
             right: -100px;
             bottom: -5px;
             width: 730px;
+            @include Media(md){
+                display: none;
+            }
             img{
                 width: 100%;
             }
