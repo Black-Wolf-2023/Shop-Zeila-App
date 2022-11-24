@@ -5,16 +5,16 @@
     border: 0;
     outline: 0;
     padding: 10px 30px;
-    background-color: $white-color;
-    color: $dark-blue-color-2;
+    background-color: $dark-blue-color-2;
+    color: $white-color;
     bottom: 20px;
     left: 20px;
     font-weight: 600;
     cursor: pointer;
     border-radius: 5px;
     &:hover{
-        background-color: $dark-blue-color-2;
-        color: $white-color;
+        background-color: $white-color;
+        color: $dark-blue-color-2;
     }
 }
 
