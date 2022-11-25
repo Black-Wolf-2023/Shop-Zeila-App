@@ -1,0 +1,30 @@
+@use "../../../../index.scss" as *;
+
+.add{
+    padding: 100px 0;
+    .container{
+        @include Flex(row,center,center,0);
+        .add-container{
+            @include Flex(row,center,flex-start,0);
+            @include Media(md){
+                @include Flex(column-reverse,center,flex-start,0);
+                padding-left: 50px;
+            }
+            gap: 200px;
+            @include Media(sm){
+                gap: 100px;
+            }
+            .add-container-img{
+                @include Media(sm){
+                @include Flex(row,flex-start,flex-start,0);
+                width: 100%;
+                    img{
+                        width: 150px;
+                        height: 300px;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+    }
+}

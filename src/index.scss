@@ -75,7 +75,11 @@ body{
     transition: all ease .4s;
 }
 
-@for $size from 14 to 30 {
+h1,h2,h3,h4{
+    color: $dark-blue-color-2;
+}
+
+@for $size from 14 to 60 {
     .size-#{$size}{
         font-size: $size + px;
     }

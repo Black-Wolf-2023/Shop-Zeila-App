@@ -18,6 +18,11 @@
             background-color: $light-blue-color-1;
             color: $white-color;
         }
+
+        @include Media(sm){
+            font-size: 1rem;
+            padding: 10px 20px;
+        }
     }
     .container{
         @include Flex(row,center,center,0);

@@ -1,0 +1,72 @@
+@use '../../../../index.scss' as *;
+.banner{
+    min-height: 600px;
+    background-image:linear-gradient(180deg,$dark-blue-color-2,$dark-blue-color);
+    margin-top: 150px;
+    .container{
+        @include Flex(row,center,center,0);
+        .banner-container{
+            @include Flex(row,center,space-between,0);
+            position: relative;
+            min-height: 600px;
+            overflow: hidden;
+            padding: 0 100px;
+            width: 80%;
+            @include Media(md){
+                width: 100%;
+                padding: 40px;
+            }
+            .banner-container-img{
+                position: absolute;
+                width: 400px;   
+                bottom: -2%; 
+                right: 0%;
+                @include Media(md){
+                    display: none;
+                }
+                img{
+                    width: 100%;
+                }            
+            }
+            .banner-content{
+                @include Flex(column,flex-start,flex-start,0);
+                gap: 30px;
+                span{
+                    font-size: 1.2rem;
+                    color: $white-color;
+                }
+                h1{
+                    font-size: 3rem;
+                    color: $white-color;
+                }
+                p{
+                    color: $white-color;
+                }
+                .banner-container-btns{
+                   @include Flex(row,center,flex-start,0);
+                   gap: 30px;
+                    button{
+                        border: 0;
+                        outline: 0;
+                    }
+                    :nth-child(1){
+                        color: $white-color;
+                        font-weight: 900;
+                        font-size: 1.3rem;
+                        background-color: transparent;
+                    }
+                    :nth-child(2){
+                        padding: 10px 30px;
+                        background-color: $light-blue-color-2;
+                        border-radius: 5px;
+                        font-weight: 700;
+                        font-size: 1.1rem;
+                        &:hover{
+                            background-color: $white-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

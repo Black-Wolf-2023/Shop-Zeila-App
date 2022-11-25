@@ -37,7 +37,10 @@
             "product__6":"./page-1-assets/main/product-6.png",
             "product__7":"./page-1-assets/main/product-7.png",
             "product__8":"./page-1-assets/main/product-8.png",
-            "product__9":"./page-1-assets/main/product-9.png"
+            "product__9":"./page-1-assets/main/product-9.png",
+            "hero__2":"./page-1-assets/main/shop-hero-2-png-picture-1.png",
+            "girl__banner__1":"./page-1-assets/main/girl-banner-1.png",
+            "girl__banner__2":"./page-1-assets/main/girl-banner-2.png"
         }
     }
 }
