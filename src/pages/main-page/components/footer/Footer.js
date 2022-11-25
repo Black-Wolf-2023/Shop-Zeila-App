@@ -22,7 +22,7 @@ export const Footer = () => {
                 </div>
             </div>
         </div>
-        <div className='copy-right font-700' style={{textAlign:"center",marginTop:"30px"}}>
+        <div className='copy-right font-700' style={{textAlign:"center",marginTop:"60px"}}>
             Copyright © All rights reserved | This template is made with Abdalrhman Eldip 
         </div>
     </footer>
