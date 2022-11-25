@@ -21,7 +21,6 @@ export const Brannd = () => {
             <div className='brannd-img'><img src={data.data.images__src.brannd__4} alt="" /></div>
             <div className='brannd-img'><img src={data.data.images__src.brannd__5} alt="" /></div>
             <div className='brannd-img'><img src={data.data.images__src.brannd__6} alt="" /></div>
-            <div className='brannd-img'><img src={data.data.images__src.brannd__7} alt="" /></div>
         </div>
       </div>
     </div>

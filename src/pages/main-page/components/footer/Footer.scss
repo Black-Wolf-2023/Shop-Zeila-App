@@ -1,0 +1,37 @@
+@use "../../../../index.scss" as *;
+
+footer{
+    padding-bottom: 50px;
+    .container{
+        @include Flex(row,center,center,0);
+        .footer-container{
+            display: grid;
+            grid-template-columns: repeat(auto-fill,200px);
+            width: 65%;
+            min-height: 400px;
+            gap: 60px;
+            .footer-sub{
+                @include Flex(row,flex-start,space-between,0);
+                .btn{
+                    @include Flex(row,flex-start,space-between,0);
+                    input,button{
+                        outline: 0;
+                        border: 0;
+                        background-color: $dark-blue-color-2;
+                        color: $white-color;
+                        padding: 10px 30px;
+                        border-top-left-radius: 5px;
+                        border-bottom-left-radius: 5px;
+                        margin-top: 30px;
+                    }
+                    button{
+                        background-color: $light-blue-color-1;
+                        border-radius: 0;
+                        border-top-right-radius: 5px;
+                        border-bottom-right-radius: 5px;
+                    }
+                }
+            }
+        }
+    }
+}

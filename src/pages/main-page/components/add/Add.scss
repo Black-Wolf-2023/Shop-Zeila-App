@@ -8,11 +8,21 @@
             @include Flex(row,center,flex-start,0);
             @include Media(md){
                 @include Flex(column-reverse,center,flex-start,0);
-                padding-left: 50px;
+                padding-left: 10px;
             }
             gap: 200px;
             @include Media(sm){
                 gap: 100px;
+            }
+            .add-container-text{
+                h1{
+                    @include Media(sm){
+                        font-size: 2.1rem;
+                    }
+                }
+                p{
+                    font-size: 16px;
+                }
             }
             .add-container-img{
                 @include Media(sm){

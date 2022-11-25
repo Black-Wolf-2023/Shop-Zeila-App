@@ -20,7 +20,6 @@ $font-weight:400,500,700,900;
 
 //====== Global-Mixin-Media ========> 
 body{
-    min-height: 20000px;
     background-color: #f8f8f8;
 }
 @mixin Flex($dir,$alin,$just,$space) {
@@ -76,6 +75,9 @@ body{
 }
 
 h1,h2,h3,h4{
+    color: $dark-blue-color-2;
+}
+a:hover{
     color: $dark-blue-color-2;
 }
 

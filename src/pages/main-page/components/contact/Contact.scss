@@ -1,0 +1,25 @@
+@use "../../../../index.scss" as *;
+
+.contact{
+    background-color: $white-color;
+    padding: 30px 0;
+    margin-top: 50px;
+    .container{
+        @include Flex(row,center,center,0);
+        .contact-container{
+            @include Flex(row,center,space-between,0);
+            flex-wrap: wrap;
+            width: 65%;
+            border-bottom:.5px solid $gray-color;
+            padding-bottom: 50px;
+            margin: 50px 0;
+            @include Media(sm){
+                width: 90%;
+            }
+            .contact-icons{
+                @include Flex(row,center,space-between,0);
+                gap: 20px;
+            }
+        }
+    }
+}

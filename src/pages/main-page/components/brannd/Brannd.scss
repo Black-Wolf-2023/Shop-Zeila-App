@@ -34,17 +34,10 @@
             margin: 0 auto;
             min-height: 150px;
             cursor: pointer;
-            @include Flex(row,center,space-between,0);
-            @include Media('md'){
-                margin-top: 50px;
-                @include Flex(column,center,space-between,0);
-                gap: 50px;
-            }
-            @include Media('sm'){
-                margin-top: 50px;
-                @include Flex(column,center,space-between,0);
-                gap: 50px;
-            }
+            @include Flex(row,center,center,0);
+            gap: 150px;
+            margin-top: 50px;
+            flex-wrap: wrap;
             @keyframes branndAnimater {
                 from{
                     transform: scale(1,1);
