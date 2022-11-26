@@ -85,20 +85,41 @@ nav{
         }
     }
 }
+.active-nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    animation: scroller .4s ease-in-out  1 alternate;
+    box-shadow: .3px .3px 10px rgba($color: $dark-blue-color-2, $alpha: .4);
+    @keyframes scroller {
+        from{
+            top: -40%;
+        }
+        to{
+            top: 0%;
+        }
+    }
+}
 .sm-nav{
     position: fixed;
-    height: 0%;
+    height: 100%;
     bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80%;
+    left: -100%;
+    width: 45%;
     @include Flex(column,center,space-between,0px);
     z-index: 100;
-    border-radius: 10px;
+    @include Media(sm){
+        width: 80%;
+    }
     ul{
         @include Flex(column,flex-start,flex-start,0px);
         gap: 30px;
         width: 300px;
+        @include Media(sm){
+            width: 80%;
+        }
         li{
             width: 100%;
             a{
@@ -126,6 +147,9 @@ nav{
     .sm-nav-info{
         @include Flex(row,center,center,0px);
         gap: 50px;
+        @include Media(sm){
+            @include Flex(column,center,center,0px);
+        }
         a{
             color: $white-color;
             margin:10px;
@@ -136,36 +160,7 @@ nav{
         width: 100%;
     }
 
-    .sm-toggler-icon{
-        @include Flex(row,center,center,0px);
-        background-color: $dark-blue-color;
-        width: 40px;
-        height: 40px;
-        cursor: pointer;
-        padding: 5px;
-        position: absolute;
-        top: -50px;
-        left: -20px;
-        z-index: -1;
-        overflow: hidden;
-        border-radius: 50%;
-        transform: rotate(270deg);
-        img{
-            width: 25px;
-            object-fit: cover;
-            position: absolute;
-            animation: arrowAnimater ease-in 1s infinite;
-            transform: translateX(-100px);
-        }
-        & img:nth-child(1){
-            animation-delay: .1s;
-        }
-        & img:nth-child(2){
-            animation-delay: .2s;
-        }
-        & img:nth-child(3){
-            animation-delay: .3s;
-        }
-    }
 }
-
+.sm-nav-show{
+    left: 0;
+}

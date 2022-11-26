@@ -1,6 +1,8 @@
 import React from 'react'
 import data from "../../../../data/data.json";
 import "./Banner.scss";
+import {Fade } from 'react-reveal';
+
 export const Banner = () => {
     const date = new Date();
   return (
@@ -10,19 +12,19 @@ export const Banner = () => {
                 <div className='banner-content'>
                     <span>SUMMER {date.getFullYear()}</span>
                     <div className='banner-container-head'>
-                        <h1>Vita Classic</h1>
-                        <h1>Product</h1>
+                        <Fade left><h1>Vita Classic</h1></Fade>
+                        <Fade right><h1>Product</h1></Fade>
                     </div>
                     <div className='banner-container-text'>
-                        <p>we know large objects will act. we know</p>
-                        <p>how are objects will act.we know</p>
+                        <Fade right><p>we know large objects will act. we know</p></Fade>
+                        <Fade left><p>how are objects will act.we know</p></Fade>
                     </div>
                     <div className='banner-container-btns'>
-                        <button>$16.48</button>
-                        <button>ADD TO CART</button>
+                        <Fade right><button>$16.48</button></Fade>
+                        <Fade right><button>ADD TO CART</button></Fade>
                     </div>
                 </div>
-                <div className='banner-container-img'><img src={data.data.images__src.hero__2} alt="" /></div>
+                <Fade right><div className='banner-container-img'><img src={data.data.images__src.hero__2} alt="" /></div></Fade>
             </div>
         </div>
     </div>

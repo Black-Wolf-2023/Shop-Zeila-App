@@ -7,8 +7,10 @@ import { Footer } from '../../pages/main-page/components/footer/Footer'
 import { Hero } from '../../pages/main-page/components/hero/Hero'
 import { Products } from '../../pages/main-page/components/products/Products'
 import { Services } from '../../pages/main-page/components/services/Services'
+import { ScrollUp } from '../../pages/main-page/components/small-components/ScrollUp'
 import { Title } from '../../pages/main-page/components/small-components/Title'
 import { Types } from '../../pages/main-page/components/types/Types'
+import {Fade } from 'react-reveal';
 
 
 
@@ -17,16 +19,17 @@ export const Home = () => {
     <>
      <Hero/>
      <Brannd/>
-     <Title title="EDITOR'S PICK" text="problem trying to resolve the confilct between"/>
+     <Fade bottom><Title title="EDITOR'S PICK" text="problem trying to resolve the confilct between"/></Fade>
      <Types/>
-     <Title title="THE BEST SERVICES" text="problem trying to resolve the confilct between"/>
+     <Fade><Title title="THE BEST SERVICES" text="problem trying to resolve the confilct between"/></Fade>
      <Services/>
-     <Title title="BESTSELLER PRODUCTS" text="problem trying to resolve the confilct between"/>
+     <Fade bottom><Title title="BESTSELLER PRODUCTS" text="problem trying to resolve the confilct between"/></Fade>
      <Products/>
      <Banner/>
      <Add/>
      <Contact/>
      <Footer/>
+     <ScrollUp/>
     </>
   )
 }

@@ -1,6 +1,8 @@
 import React from 'react'
 import { Footer__links } from '../small-components/Footer__links'
 import "./Footer.scss";
+import {Fade } from 'react-reveal';
+
 
 export const Footer = () => {
   return (
@@ -13,18 +15,20 @@ export const Footer = () => {
                 <Footer__links head='Resources' links={['About Us','Carrier','We are hiring','Blog']}/>
                 <div className='footer-sub'>
                     <div className='footer-btn'>
-                    <h3>Get in Touch</h3>
+                      <Fade bottom><h3>Get in Touch</h3></Fade>
                       <div className='btn'>
-                        <input type="text" placeholder='Your Email ?'/>
-                        <button>Subscribe</button>
+                        <Fade left><input type="text" placeholder='Your Email ?'/></Fade>
+                        <Fade right><button>Subscribe</button></Fade>
                       </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div className='copy-right font-700' style={{textAlign:"center",marginTop:"60px"}}>
+        <Fade left>
+          <div className='copy-right font-700' style={{textAlign:"center",marginTop:"60px"}}>
             Copyright © All rights reserved | This template is made with Abdalrhman Eldip 
-        </div>
+          </div>
+        </Fade>
     </footer>
   )
 }
