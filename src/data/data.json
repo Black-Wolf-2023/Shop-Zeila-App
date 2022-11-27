@@ -28,7 +28,7 @@
             "card-4":"./page-1-assets/main/card-cover-4.jpg",
             "book__1":"./page-1-assets/icons/bx_bxs-book-reader.png",
             "book__2":"./page-1-assets/icons/carbon_book.png",
-            "growth__arrow":"./page-1-assets/icons/uil_arrow-growth.png",
+            "growth__arrow":"./page-1-assets/icons/arrow-growth.png",
             "product__1":"./page-1-assets/main/product-1.png",
             "product__2":"./page-1-assets/main/product-2.png",
             "product__3":"./page-1-assets/main/product-3.png",
@@ -44,8 +44,8 @@
             "dark__facebook":"./page-1-assets/icons/facebook.svg",
             "dark__twitter":"./page-1-assets/icons/twitter.svg",
             "dark__instagram":"./page-1-assets/icons/instagram.svg",
-            "List":"./page-1-assets/icons/List.png",
-            "Close":"./page-1-assets/icons/close.png"
+            "List":"./page-1-assets/icons/List.svg",
+            "Close":"./page-1-assets/icons/close.svg"
         }
     }
 }

@@ -1,0 +1,139 @@
+@use '../../../index' as *;
+
+.contact-nav{
+    height: 100px;
+    @include Flex(row,center,flex-start,10px);
+    .container{
+        @include Flex(row,center,space-between,0);
+        @include Media(ex){
+            .contact-nav-logo-1{
+                display: none;
+            }
+        }
+        @include Media(md){
+            .contact-nav-logo-1{
+                display: block;
+            }
+        }
+        @include Media(ex){
+            .contact-nav-toggler{
+                display: none;
+            }
+        }
+        @include Media(md){
+            .contact-nav-toggler{
+                display: block;
+            }
+        }
+        .contact-nav-toggler{
+            cursor: pointer;
+        }
+        .contact-nav-list{
+            @include Flex(row,center,space-between,0);
+            width: 100%;
+            margin-top: 20px;
+            .contact-logo-list{
+                @include Flex(row,center,flex-start,0);
+                gap: 150px;
+                width: 100%;
+                ul{
+                    @include Flex(row,center,flex-start,0);
+                    gap: 50px;
+                    flex-grow: 1;
+                    width: 200px;
+                    li{
+                        a{
+                            font-size: 1.2rem;
+                            color: $dark-blue-color-2;
+                            font-weight: 500;
+                            &:hover{
+                                color: $light-blue-color-2;
+                            }
+                        }
+                    }
+                }
+                .active-contact-nav-list{
+                    background-color: $light-blue-color-2;
+                    color: $white-color;
+                    padding: 6px;
+                    border-radius: 5px;
+                    &:hover{
+                        color: $light-blue-color-2;
+                        background-color: $dark-blue-color-2;
+                    }
+                }
+                @include Media(md){
+                    @include Flex(column,center,space-between,0);
+                    background-color: $dark-blue-color-2;
+                    position: fixed;
+                    width: 280px;
+                    padding: 20px;
+                    gap: 50px;
+                    left: -100%;
+                    top: 0;
+                    bottom: 0;
+                    z-index: 100;
+                    margin: 0;  
+                    ul{
+                        @include Flex(column,flex-start,flex-start,0);
+                        gap: 20px;
+                        li{
+                            width: 100%;
+                            a{
+                                color: $white-color;
+                                border-radius: 5px;
+                                display: block;
+                                width: 100%;
+                                padding: 10px;
+                            }
+                            .active-contact-nav-list{
+                                background-color: $white-color;
+                                color: $dark-blue-color-2;
+                                &:hover{
+                                    color: $white-color;
+                                    background-color: $light-blue-color-2;
+                                }
+                            }
+                        }
+                    }
+                    .contact-links-info{
+                        gap: 25px;
+                        button{
+                            padding: 10px 15px;
+                            font-size: 1rem;
+                            background-color: $light-blue-color-2;
+                        }
+                    }
+                }
+            }
+            .contact-logo-list-toggler{
+                left: 0;
+            }
+            .contact-links-info{
+                @include Flex(row,center,center,0);
+                gap: 50px;
+                a{
+                    font-size: 1.2rem;
+                    font-weight: 700;
+                    color: $light-blue-color-2;
+                    &:hover{
+                        color: $dark-blue-color-2;
+                    }
+                }
+                button{
+                    padding: 10px 30px;
+                    border-radius: 5px;
+                    color: $white-color;
+                    font-weight: 700;
+                    font-size: 1.2rem;
+                    background-color: $dark-blue-color-2;
+                    border: 1px solid $dark-blue-color-2;
+                    &:hover{
+                        background-color: transparent;
+                        color: $dark-blue-color-2;
+                    }
+                }
+            }
+        }
+    }
+}

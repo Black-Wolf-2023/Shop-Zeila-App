@@ -28,14 +28,14 @@ export const Nav = () => {
     <>
     <nav className={active__nav ? 'active-nav' : null }>
        <div className='nav-links'>
-          <Bounce right><Link to='/'><div className='nav-logo'><img src={data.data.images__src.logo} alt="" width='60px' height='60px'/></div></Link></Bounce>
+          <Bounce right><Link to='/'><div className='nav-logo'><img src={data.data.images__src.logo} alt="" width='80px' height='80px'/></div></Link></Bounce>
            <ul className='font-700 size-18'>
             <Bounce left><li><Link className='active-link'>Home</Link></li></Bounce>
             <Bounce right><li><Link>Shope</Link></li></Bounce>
             <Bounce left><li><Link>About</Link></li></Bounce>
             <Bounce right><li><Link>Blog</Link></li></Bounce>
             <Bounce left><li><Link>Pages</Link></li></Bounce>
-            <Bounce right><li><Link>Contact </Link></li></Bounce>
+            <Bounce right><li><Link to='/contact'>Contact </Link></li></Bounce>
            </ul>
        </div>
        <div className='nav-info'>
@@ -55,11 +55,11 @@ export const Nav = () => {
              <li><Link>About</Link></li>
              <li><Link>Blog</Link></li>
              <li><Link>Pages</Link></li>
-             <li><Link>Contact</Link></li>
+             <li><Link to='./contact'>Contact</Link></li>
            </ul>
            <div className='sm-nav-info'>
              <div className='nav-register font-700 size-18'><img src={data.data.images__src.user} alt="" /><Link>Login</Link> / <Link>Register</Link></div>
-             <div className='nav-logo'><img src={data.data.images__src.logo} alt="" width='60px' height='60px'/></div>
+             <div className='nav-logo'><img src={data.data.images__src.logo} alt="" width='100px' height='100px'/></div>
            </div>
      </div>
   </>

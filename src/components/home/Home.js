@@ -22,7 +22,7 @@ export const Home = () => {
   useEffect(() =>{
     setTimeout(() => {
       setLoader(true)
-    },1000)
+    },2000)
   },[])
   {
     return loader__status ? 

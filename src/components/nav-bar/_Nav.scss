@@ -30,7 +30,6 @@ nav{
                 }
             }
             .active-link{
-                border: 2px solid $light-blue-color-2;
                 color: $white-color;
                 background-color: transparent;
                 padding: 5px 10px;
@@ -38,8 +37,8 @@ nav{
                 background-color: $light-blue-color-2;
             }
             .active-link:hover{
-                background-color: transparent;
-                color: $dark-blue-color-2;  
+                background-color: $dark-blue-color-2;
+                color: $light-blue-color-2;  
             }
           }
        }
@@ -108,13 +107,15 @@ nav{
     bottom: 0;
     left: -100%;
     width: 45%;
-    @include Flex(column,center,space-between,0px);
     z-index: 100;
+    background-color: $dark-blue-color-2;
+    color: $white-color;
+    @include Flex(column,flex-start,space-between,0px);
     @include Media(sm){
         width: 80%;
     }
     ul{
-        @include Flex(column,flex-start,flex-start,0px);
+        @include Flex(column,flex-start,flex-start,40px);
         gap: 30px;
         width: 300px;
         @include Media(sm){
@@ -125,27 +126,23 @@ nav{
             a{
              width: 100%;
              color: $white-color;
-             background-color: $dark-blue-color-2;
              padding: 10px;
              display: inline-block;
-             text-align: center;
-             border-radius: 10px;
+             border-radius: 5px;
             }
             a:hover{
                 background-color: $white-color;
                 color: $dark-blue-color;
             }
             .active-sm-link{
-                background-color: $white-color;
+                background-color: $light-blue-color-2;
                 color: $dark-blue-color;
             }
         }
         margin-top: 50px;
     }
-    background-color: $dark-blue-color;
-    color: $white-color;
     .sm-nav-info{
-        @include Flex(row,center,center,0px);
+        @include Flex(column,center,center,0px);
         gap: 50px;
         @include Media(sm){
             @include Flex(column,center,center,0px);

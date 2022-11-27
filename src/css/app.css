@@ -345,7 +345,7 @@ a, button {
     display: none;
   }
 }
-@media screen and (min-width: 1268px) {
+@media screen and (max-width: 4000px) {
   .toggle-input {
     display: none;
   }
@@ -482,7 +482,6 @@ nav .nav-links ul li a:hover {
   color: #11c5dd;
 }
 nav .nav-links ul li .active-link {
-  border: 2px solid #11c5dd;
   color: #fff;
   background-color: transparent;
   padding: 5px 10px;
@@ -490,8 +489,8 @@ nav .nav-links ul li .active-link {
   background-color: #11c5dd;
 }
 nav .nav-links ul li .active-link:hover {
-  background-color: transparent;
-  color: #131726;
+  background-color: #131726;
+  color: #11c5dd;
 }
 nav .nav-info {
   display: flex;
@@ -572,14 +571,14 @@ nav .nav-info .nav-controller {
   bottom: 0;
   left: -100%;
   width: 45%;
+  z-index: 100;
+  background-color: #131726;
+  color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   padding: 0 0px;
-  z-index: 100;
-  background-color: #252B42;
-  color: #fff;
 }
 @media screen and (max-width: 567px) {
   .sm-nav {
@@ -591,7 +590,7 @@ nav .nav-info .nav-controller {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  padding: 0 0px;
+  padding: 0 40px;
   gap: 30px;
   width: 300px;
   margin-top: 50px;
@@ -607,23 +606,21 @@ nav .nav-info .nav-controller {
 .sm-nav ul li a {
   width: 100%;
   color: #fff;
-  background-color: #131726;
   padding: 10px;
   display: inline-block;
-  text-align: center;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 .sm-nav ul li a:hover {
   background-color: #fff;
   color: #252B42;
 }
 .sm-nav ul li .active-sm-link {
-  background-color: #fff;
+  background-color: #11c5dd;
   color: #252B42;
 }
 .sm-nav .sm-nav-info {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 0 0px;
@@ -1193,4 +1190,174 @@ footer .container .footer-container .footer-sub .btn button {
   align-items: center;
   padding: 0 0;
   z-index: 1000;
+}
+
+.contact-nav {
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 10px;
+}
+.contact-nav .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0;
+}
+@media screen and (max-width: 4000px) {
+  .contact-nav .container .contact-nav-logo-1 {
+    display: none;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .contact-nav .container .contact-nav-logo-1 {
+    display: block;
+  }
+}
+@media screen and (max-width: 4000px) {
+  .contact-nav .container .contact-nav-toggler {
+    display: none;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .contact-nav .container .contact-nav-toggler {
+    display: block;
+  }
+}
+.contact-nav .container .contact-nav-toggler {
+  cursor: pointer;
+}
+.contact-nav .container .contact-nav-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0;
+  width: 100%;
+  margin-top: 20px;
+}
+.contact-nav .container .contact-nav-list .contact-logo-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 0;
+  gap: 150px;
+  width: 100%;
+}
+.contact-nav .container .contact-nav-list .contact-logo-list ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 0;
+  gap: 50px;
+  flex-grow: 1;
+  width: 200px;
+}
+.contact-nav .container .contact-nav-list .contact-logo-list ul li a {
+  font-size: 1.2rem;
+  color: #131726;
+  font-weight: 500;
+}
+.contact-nav .container .contact-nav-list .contact-logo-list ul li a:hover {
+  color: #11c5dd;
+}
+.contact-nav .container .contact-nav-list .contact-logo-list .active-contact-nav-list {
+  background-color: #11c5dd;
+  color: #fff;
+  padding: 6px;
+  border-radius: 5px;
+}
+.contact-nav .container .contact-nav-list .contact-logo-list .active-contact-nav-list:hover {
+  color: #11c5dd;
+  background-color: #131726;
+}
+@media screen and (max-width: 1024px) {
+  .contact-nav .container .contact-nav-list .contact-logo-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0;
+    background-color: #131726;
+    position: fixed;
+    width: 280px;
+    padding: 20px;
+    gap: 50px;
+    left: -100%;
+    top: 0;
+    bottom: 0;
+    z-index: 100;
+    margin: 0;
+  }
+  .contact-nav .container .contact-nav-list .contact-logo-list ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0 0;
+    gap: 20px;
+  }
+  .contact-nav .container .contact-nav-list .contact-logo-list ul li {
+    width: 100%;
+  }
+  .contact-nav .container .contact-nav-list .contact-logo-list ul li a {
+    color: #fff;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+  }
+  .contact-nav .container .contact-nav-list .contact-logo-list ul li .active-contact-nav-list {
+    background-color: #fff;
+    color: #131726;
+  }
+  .contact-nav .container .contact-nav-list .contact-logo-list ul li .active-contact-nav-list:hover {
+    color: #fff;
+    background-color: #11c5dd;
+  }
+  .contact-nav .container .contact-nav-list .contact-logo-list .contact-links-info {
+    gap: 25px;
+  }
+  .contact-nav .container .contact-nav-list .contact-logo-list .contact-links-info button {
+    padding: 10px 15px;
+    font-size: 1rem;
+    background-color: #11c5dd;
+  }
+}
+.contact-nav .container .contact-nav-list .contact-logo-list-toggler {
+  left: 0;
+}
+.contact-nav .container .contact-nav-list .contact-links-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0;
+  gap: 50px;
+}
+.contact-nav .container .contact-nav-list .contact-links-info a {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #11c5dd;
+}
+.contact-nav .container .contact-nav-list .contact-links-info a:hover {
+  color: #131726;
+}
+.contact-nav .container .contact-nav-list .contact-links-info button {
+  padding: 10px 30px;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.2rem;
+  background-color: #131726;
+  border: 1px solid #131726;
+}
+.contact-nav .container .contact-nav-list .contact-links-info button:hover {
+  background-color: transparent;
+  color: #131726;
 }/*# sourceMappingURL=app.css.map */

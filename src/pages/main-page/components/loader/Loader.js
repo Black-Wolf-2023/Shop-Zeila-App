@@ -1,11 +1,13 @@
 import React, { useEffect } from 'react'
+import { useState } from 'react'
 import { MutatingDots } from 'react-loader-spinner'
 
 export const Loader = () => {
+
   return (
-    <div className='loader'>
+    <div  className='loader'>
       <MutatingDots 
-        height="100"
+        heght="100"
         width="100"
         color="#11c5dd"
         secondaryColor= '#fff'
