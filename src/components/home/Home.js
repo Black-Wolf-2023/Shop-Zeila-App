@@ -12,7 +12,8 @@ import { Title } from '../../pages/main-page/components/small-components/Title'
 import { Types } from '../../pages/main-page/components/types/Types'
 import {Fade } from 'react-reveal';
 import { Loader } from '../../pages/main-page/components/loader/Loader'
-
+import {Header} from '../../components/header/Header';
+import {Nav} from '../../components/nav-bar/Nav';
 
 
 export const Home = () => {
@@ -26,6 +27,8 @@ export const Home = () => {
   {
     return loader__status ? 
     <>
+      <Header/>
+      <Nav/>
       <Hero/>
       <Brannd/>
       <Fade bottom><Title title="EDITOR'S PICK" text="problem trying to resolve the confilct between"/></Fade>
