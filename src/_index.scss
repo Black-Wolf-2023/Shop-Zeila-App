@@ -72,9 +72,10 @@ body{
     list-style: none;
     text-decoration: none;
     font-family: 'Tajawal', sans-serif;
+}
+*:not(circle){
     transition: all ease .4s;
 }
-
 h1,h2,h3,h4{
     color: $dark-blue-color-2;
 }

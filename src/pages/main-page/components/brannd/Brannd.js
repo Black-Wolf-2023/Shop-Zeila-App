@@ -1,5 +1,4 @@
 import React from 'react'
-import './Brannd.scss';
 import data from "../../../../data/data.json"
 import { useState } from 'react';
 import { useEffect } from 'react';

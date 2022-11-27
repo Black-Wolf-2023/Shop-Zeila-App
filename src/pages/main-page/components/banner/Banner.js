@@ -1,6 +1,5 @@
 import React from 'react'
 import data from "../../../../data/data.json";
-import "./Banner.scss";
 import {Fade } from 'react-reveal';
 
 export const Banner = () => {

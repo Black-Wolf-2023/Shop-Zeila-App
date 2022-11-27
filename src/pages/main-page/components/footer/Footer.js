@@ -1,6 +1,5 @@
 import React from 'react'
 import { Footer__links } from '../small-components/Footer__links'
-import "./Footer.scss";
 import {Fade } from 'react-reveal';
 
 

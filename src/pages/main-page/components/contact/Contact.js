@@ -1,6 +1,5 @@
 import React from 'react'
 import data from '../../../../data/data.json';
-import "./Contact.scss";
 import {Fade } from 'react-reveal';
 
 export const Contact = () => {

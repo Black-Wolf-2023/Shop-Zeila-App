@@ -1,7 +1,6 @@
 import React from 'react'
 import data from "../../data/data.json";
 import {Link} from  "react-router-dom";
-import "./Nav.scss";
 import { useRef } from 'react';
 import { useState } from 'react';
 import { useEffect } from 'react';
@@ -29,7 +28,7 @@ export const Nav = () => {
     <>
     <nav className={active__nav ? 'active-nav' : null }>
        <div className='nav-links'>
-          <Bounce right><div className='nav-logo'><img src={data.data.images__src.logo} alt="" width='60px' height='60px'/></div></Bounce>
+          <Bounce right><Link to='/'><div className='nav-logo'><img src={data.data.images__src.logo} alt="" width='60px' height='60px'/></div></Link></Bounce>
            <ul className='font-700 size-18'>
             <Bounce left><li><Link className='active-link'>Home</Link></li></Bounce>
             <Bounce right><li><Link>Shope</Link></li></Bounce>

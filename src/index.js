@@ -3,7 +3,6 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Home } from "./components/home/Home";
 import { Header } from "./components/header/Header";
 import { Nav } from "./components/nav-bar/Nav";
-import "./index.scss";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -13,6 +12,7 @@ root.render(
        <Nav/>
       <Routes>
         <Route path='/' element = {<Home/>}/>
+        <Route path="/nav" element = {<Nav/>}></Route>
       </Routes>
     </BrowserRouter>
 )

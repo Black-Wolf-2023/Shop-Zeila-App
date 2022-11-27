@@ -1,0 +1,14 @@
+@use './index.scss' as *;
+@use "./components/header/Header";
+@use "./components/nav-bar/Nav";
+@use "./pages/main-page/components/hero/Hero";
+@use "./pages/main-page/components/add/Add";
+@use "./pages/main-page/components/products/Products";
+@use "./pages/main-page/components/banner/Banner";
+@use  "./pages/main-page/components/brannd/Brannd";
+@use "./pages/main-page/components/services/Services";
+@use "./pages/main-page/components/types/Types";
+@use "./pages/main-page/components/contact/Contact";
+@use  "./pages/main-page/components/footer/Footer";
+@use "./pages/main-page/components/loader/Loader";
+

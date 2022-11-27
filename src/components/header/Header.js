@@ -1,5 +1,4 @@
 import React from 'react'
-import './Header.scss';
 import data  from "../../data/data.json"
 import { Bounce } from 'react-reveal';
 

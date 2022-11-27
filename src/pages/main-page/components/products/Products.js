@@ -1,8 +1,7 @@
 import React from 'react'
 import { ProductCard } from '../small-components/ProductCard'
 import data from '../../../../data/data.json';
-import "./Products.scss";
-import {Fade } from 'react-reveal';
+import {Fade} from 'react-reveal';
 
 export const Products = () => {
   return (

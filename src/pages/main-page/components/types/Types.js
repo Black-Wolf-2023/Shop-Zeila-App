@@ -1,7 +1,6 @@
 import React from 'react';
 import { LightSpeed ,Fade } from 'react-reveal';
 import data from "../../../../data/data.json";
-import './Types.scss';
 
 export const Types = () => {
   return (

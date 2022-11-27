@@ -1,7 +1,6 @@
 import React from 'react'
 import { Card } from '../small-components/Card'
 import data from "../../../../data/data.json";
-import "./Services.scss";
 import { Bounce } from 'react-reveal';
 
 

@@ -1,6 +1,5 @@
 import React from 'react'
 import { useState } from 'react';
-import "./Hero.scss";
 import data from '../../../../data/data.json';
 import { Bounce } from 'react-reveal';
 
