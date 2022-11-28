@@ -19,6 +19,7 @@ export const Contact = () => {
       return loader__status ? 
       <>
       <Nav/>
+      <Hero/>
       </> : <Loader/>
     }
 }

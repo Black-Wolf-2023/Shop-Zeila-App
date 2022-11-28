@@ -1,0 +1,45 @@
+@use "../../../index" as *;
+
+.contact-hero{
+    .container{
+        .contact-hero-container{
+            @include Flex(row,center,space-between,0);
+            @include Media(md){
+                @include Flex(column,flex-start,space-between,0);
+                .contact-hero-img{
+                    align-self: flex-end;
+                    img{
+                        width: 100%;  
+                    }
+                }
+            }
+            .contact-hero-text{
+                @include Flex(column,flex-start,flex-start,0);
+                gap: 50px;
+                padding: 30px;
+                flex-grow: 1;
+                h1{
+                    font-size: 4rem;
+                    @include Media(sm){
+                        font-size: 3rem;
+                    }
+                }
+                .contact-hero-phone{
+                    @include Flex(row,flex-start,flex-start,0);
+                    gap: 30px;
+                    @include Media(sm){
+                    @include Flex(column,flex-start,flex-start,0);
+                        h3{
+                            font-size: 1.3rem;
+                        }
+                    }
+                }
+                .contact-hero-social{
+                    @include Flex(row,flex-start,flex-start,0);
+                    gap: 30px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

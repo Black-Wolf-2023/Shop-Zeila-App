@@ -1346,7 +1346,7 @@ footer .container .footer-container .footer-sub .btn button {
   color: #11c5dd;
 }
 .contact-nav .container .contact-nav-list .contact-links-info a:hover {
-  color: #131726;
+  color: #2C5592;
 }
 .contact-nav .container .contact-nav-list .contact-links-info button {
   padding: 10px 30px;
@@ -1355,9 +1355,79 @@ footer .container .footer-container .footer-sub .btn button {
   font-weight: 700;
   font-size: 1.2rem;
   background-color: #131726;
-  border: 1px solid #131726;
+  border: 1px solid #11c5dd;
 }
 .contact-nav .container .contact-nav-list .contact-links-info button:hover {
   background-color: transparent;
-  color: #131726;
+  color: #11c5dd;
+}
+
+.contact-hero .container .contact-hero-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0;
+}
+@media screen and (max-width: 1024px) {
+  .contact-hero .container .contact-hero-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 0;
+  }
+  .contact-hero .container .contact-hero-container .contact-hero-img {
+    align-self: flex-end;
+  }
+  .contact-hero .container .contact-hero-container .contact-hero-img img {
+    width: 100%;
+  }
+}
+.contact-hero .container .contact-hero-container .contact-hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0 0;
+  gap: 50px;
+  padding: 30px;
+  flex-grow: 1;
+}
+.contact-hero .container .contact-hero-container .contact-hero-text h1 {
+  font-size: 4rem;
+}
+@media screen and (max-width: 567px) {
+  .contact-hero .container .contact-hero-container .contact-hero-text h1 {
+    font-size: 3rem;
+  }
+}
+.contact-hero .container .contact-hero-container .contact-hero-text .contact-hero-phone {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0 0;
+  gap: 30px;
+}
+@media screen and (max-width: 567px) {
+  .contact-hero .container .contact-hero-container .contact-hero-text .contact-hero-phone {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0 0;
+  }
+  .contact-hero .container .contact-hero-container .contact-hero-text .contact-hero-phone h3 {
+    font-size: 1.3rem;
+  }
+}
+.contact-hero .container .contact-hero-container .contact-hero-text .contact-hero-social {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0 0;
+  gap: 30px;
+  cursor: pointer;
 }/*# sourceMappingURL=app.css.map */
