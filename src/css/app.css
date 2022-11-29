@@ -1269,7 +1269,7 @@ footer .container .footer-container .footer-sub .btn button {
 .contact-nav .container .contact-nav-list .contact-logo-list .active-contact-nav-list {
   background-color: #11c5dd;
   color: #fff;
-  padding: 6px;
+  padding: 6px 10px;
   border-radius: 5px;
 }
 .contact-nav .container .contact-nav-list .contact-logo-list .active-contact-nav-list:hover {
@@ -1430,4 +1430,71 @@ footer .container .footer-container .footer-sub .btn button {
   padding: 0 0;
   gap: 30px;
   cursor: pointer;
+}
+
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0;
+  gap: 30px;
+  border: 1px solid #2C5592;
+  width: 300px;
+  padding: 40px 20px;
+  text-align: center;
+}
+.contact-card .contact-btn button {
+  padding: 15px 50px;
+  border-radius: 20px;
+  background-color: #131726;
+  color: #11c5dd;
+  border: 2px solid #11c5dd;
+  font-weight: 700;
+  font-size: 17px;
+}
+.contact-card .contact-btn button:hover {
+  background-color: #11c5dd;
+  color: #fff;
+}
+
+.contact-info .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0;
+}
+.contact-info .container .contact-info-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0;
+  flex-wrap: wrap;
+  gap: 150px;
+}
+@media screen and (max-width: 1024px) {
+  .contact-info .container .contact-info-container {
+    gap: 50px;
+  }
+}
+
+.contact-talk .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0;
+  margin-top: 300px;
+  gap: 20px;
+}
+.contact-talk .container .contact-talk-btn button {
+  padding: 10px 50px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 18px;
+  border: 0;
+  border-radius: 5px;
+  background-color: #2C5592;
 }/*# sourceMappingURL=app.css.map */

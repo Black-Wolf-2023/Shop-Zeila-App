@@ -1,0 +1,21 @@
+@use "../../../index" as *;
+
+.contact-talk{
+    .container{
+        @include Flex(column,center,center,0);
+        margin-top: 300px;
+        gap: 20px;
+        .contact-talk-btn{
+            button{
+                padding: 10px 50px;
+                color: $white-color;
+                font-weight: 500;
+                font-size: 18px;
+                border: 0;
+                border-radius: 5px;
+                background-color: $light-blue-color-1;    
+            }
+        }
+    
+    }
+}

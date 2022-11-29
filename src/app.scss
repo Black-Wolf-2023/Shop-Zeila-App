@@ -9,7 +9,9 @@
 @use "./pages/main-page/components/services/Services";
 @use "./pages/main-page/components/types/Types";
 @use "./pages/main-page/components/contact/Contact";
-@use  "./pages/main-page/components/footer/Footer";
+@use  "./components/footer/Footer";
 @use "./pages/main-page/components/loader/Loader";
 @use "./pages/contact/nav/Contact__Nav";
 @use "./pages/contact/hero/Contact__Hero";
+@use "./pages/contact/info/Contact__Info";
+@use "./pages/contact/talk/Talk";

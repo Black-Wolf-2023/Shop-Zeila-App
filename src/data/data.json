@@ -46,7 +46,11 @@
             "dark__instagram":"./page-1-assets/icons/instagram.svg",
             "List":"./page-1-assets/icons/List.svg",
             "Close":"./page-1-assets/icons/close.svg",
-            "contact__hero":"./page-2-assets/main/Hero.svg"
+            "contact__hero":"./page-2-assets/main/Hero.svg",
+            "contact__phone":"./page-2-assets/icons/phone.png",
+            "contact__location":"./page-2-assets/icons/location.png",
+            "contact__email":"./page-2-assets/icons/email.png",
+            "contact__arrow":"./page-2-assets/icons/arrow.png"
         }
     }
 }

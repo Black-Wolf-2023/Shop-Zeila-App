@@ -1,0 +1,38 @@
+@use "../../../index" as *;
+
+.contact-card{
+    @include Flex(column,center,center,0);
+    gap:30px;
+    border: 1px solid $light-blue-color-1;
+    width: 300px;
+    padding: 40px 20px;
+    text-align: center;
+    .contact-btn{
+        button{
+            padding: 15px 50px;
+            border-radius: 20px;
+            background-color: $dark-blue-color-2;
+            color: $light-blue-color-2;
+            border: 2px solid $light-blue-color-2;
+            font-weight: 700;
+            font-size: 17px;
+            &:hover{
+                background-color: $light-blue-color-2;
+                color: $white-color;
+            }
+        }
+    }
+}
+.contact-info{
+    .container{
+        @include Flex(column,center,center,0);
+        .contact-info-container{
+            @include Flex(row,center,center,0);
+            flex-wrap: wrap;
+            gap:150px;
+            @include Media(md){
+                gap: 50px;
+            }
+        }
+    }
+}
