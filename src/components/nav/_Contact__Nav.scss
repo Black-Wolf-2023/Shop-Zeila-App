@@ -1,8 +1,8 @@
-@use '../../../index' as *;
+@use '../../index' as *;
 
 .contact-nav{
     height: 100px;
-    @include Flex(row,center,flex-start,10px);
+    @include Flex(row,flex-end,flex-start,10px);
     .container{
         @include Flex(row,center,space-between,0);
         @include Media(ex){

@@ -1,7 +1,6 @@
 import React from 'react';
 import { useEffect } from 'react';
 import { useRef } from 'react';
-import data from '../../../../data/data.json';
 
 export const ScrollUp = () => {
     const toggle__element = useRef();
@@ -16,9 +15,9 @@ export const ScrollUp = () => {
 
   return (
         <div className='sm-toggler-icon' style={{left:"-100%"}} ref={toggle__element} onClick = {() => {window.scrollTo({behavior:"smooth",top:0})}}>
-            <img src={data.data.images__src.arrow__right} alt="" />
-            <img src={data.data.images__src.arrow__right} alt="" />
-            <img src={data.data.images__src.arrow__right} alt="" />
+            <img src="./page-1-assets/icons/arrow-right.svg" alt="" />
+            <img src="./page-1-assets/icons/arrow-right.svg" alt="" />
+            <img src="./page-1-assets/icons/arrow-right.svg" alt="" />
         </div>
   )
 }

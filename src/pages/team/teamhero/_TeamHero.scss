@@ -1,0 +1,33 @@
+@use "../../../index" as * ;
+
+body{
+    height: 10000px;
+}
+.team{
+    @include Flex(row,center ,space-evenly,0);
+    gap: 30px;
+    flex-wrap: wrap;
+    .img-row-1{
+        img{
+            width: 100%;
+            cursor: pointer;
+        }
+    }
+    h1{
+        @include Media(md){
+            font-size: 50px !important;
+        }
+        @include Media(sm){
+            font-size: 30px !important;
+        }
+    }
+    .img-row-2{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+        img{
+            width: 100%;
+            cursor: pointer;
+        }
+    }
+}

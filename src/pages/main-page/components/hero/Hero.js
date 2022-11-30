@@ -1,6 +1,5 @@
 import React from 'react'
 import { useState } from 'react';
-import data from '../../../../data/data.json';
 import { Bounce } from 'react-reveal';
 
 export const Hero = () => {
@@ -14,7 +13,7 @@ export const Hero = () => {
                 <Bounce right><p className='font-700'>We know how large objects will act,but things on a small scale.</p></Bounce>
                 <Bounce left><button>SHOP NOW</button></Bounce>
             </div>
-            <Bounce right><div className='main-img'><img src={data.data.images__src.hero} alt="" /></div></Bounce>
+            <Bounce right><div className='main-img'><img src="./page-1-assets/main/hero-cover-1.svg" alt="" /></div></Bounce>
       </div>
     </main>
   )

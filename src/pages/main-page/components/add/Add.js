@@ -1,5 +1,4 @@
 import React from 'react'
-import data from "../../../../data/data.json";
 import {Fade } from 'react-reveal';
 
 export const Add = () => {
@@ -8,8 +7,8 @@ export const Add = () => {
         <div className='container'>
             <div className='add-container'>
                 <div className='add-container-img'>
-                    <Fade left><img src={data.data.images__src.girl__banner__1} alt="" /></Fade>
-                    <Fade right><img src={data.data.images__src.girl__banner__2} alt="" /></Fade>
+                    <Fade left><img src="./page-1-assets/main/girl-banner-1.png" alt="" /></Fade>
+                    <Fade right><img src="./page-1-assets/main/girl-banner-2.png" alt="" /></Fade>
                 </div>
                 <div className='add-container-text'>
                     <Fade bottom><span className='text-light-blue-2 font-700 size-18'>Featured Products</span></Fade>

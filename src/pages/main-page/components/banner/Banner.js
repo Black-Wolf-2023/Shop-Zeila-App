@@ -1,5 +1,4 @@
 import React from 'react'
-import data from "../../../../data/data.json";
 import {Fade } from 'react-reveal';
 
 export const Banner = () => {
@@ -23,7 +22,7 @@ export const Banner = () => {
                         <Fade right><button>ADD TO CART</button></Fade>
                     </div>
                 </div>
-                <Fade right><div className='banner-container-img'><img src={data.data.images__src.hero__2} alt="" /></div></Fade>
+                <Fade right><div className='banner-container-img'><img src="./page-1-assets/main/shop-hero-2-png-picture-1.png" alt="" /></div></Fade>
             </div>
         </div>
     </div>

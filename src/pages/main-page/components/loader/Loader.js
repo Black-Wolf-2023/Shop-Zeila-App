@@ -1,5 +1,4 @@
-import React, { useEffect } from 'react'
-import { useState } from 'react'
+import React from 'react'
 import { MutatingDots } from 'react-loader-spinner'
 
 export const Loader = () => {

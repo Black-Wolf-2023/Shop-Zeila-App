@@ -1,6 +1,5 @@
 import React from 'react'
-import data from "../../../data/data.json";
-import {Fade ,Bounce } from 'react-reveal';
+import {Bounce } from 'react-reveal';
 
 export const Hero = () => {
   return (
@@ -18,12 +17,12 @@ export const Hero = () => {
                   <Bounce left><h3 className='size-25 font-700 text-dark-blue'>Fax: 2450392</h3></Bounce>
                 </div>
                 <div className='contact-hero-social'>
-                   <Bounce left><img src={data.data.images__src.dark__facebook} alt="" /></Bounce>
-                   <Bounce left><img src={data.data.images__src.dark__twitter} alt="" /></Bounce>
-                   <Bounce left><img src={data.data.images__src.dark__instagram} alt="" /></Bounce>
+                   <Bounce left><img src="./page-1-assets/icons/facebook.svg" alt="" /></Bounce>
+                   <Bounce left><img src="./page-1-assets/icons/twitter.svg" alt="" /></Bounce>
+                   <Bounce left><img src="./page-1-assets/icons/instagram.svg" alt="" /></Bounce>
                 </div>
              </div>
-             <Bounce right><div className='contact-hero-img'><img src={data.data.images__src.contact__hero} alt="" /></div></Bounce>
+             <Bounce right><div className='contact-hero-img'><img src="./page-2-assets/main/Hero.svg" alt="" /></div></Bounce>
          </div>
       </div>
     </div>

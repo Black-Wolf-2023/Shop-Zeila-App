@@ -84,23 +84,6 @@ nav{
         }
     }
 }
-.active-nav{
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 10;
-    animation: scroller .4s ease-in-out  1 alternate;
-    box-shadow: .3px .3px 10px rgba($color: $dark-blue-color-2, $alpha: .4);
-    @keyframes scroller {
-        from{
-            top: -40%;
-        }
-        to{
-            top: 0%;
-        }
-    }
-}
 .sm-nav{
     position: fixed;
     height: 100%;

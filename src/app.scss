@@ -11,7 +11,8 @@
 @use "./pages/main-page/components/contact/Contact";
 @use  "./components/footer/Footer";
 @use "./pages/main-page/components/loader/Loader";
-@use "./pages/contact/nav/Contact__Nav";
+@use "./components/nav/Contact__Nav";
 @use "./pages/contact/hero/Contact__Hero";
 @use "./pages/contact/info/Contact__Info";
 @use "./pages/contact/talk/Talk";
+@use "./pages/team/teamhero/TeamHero";

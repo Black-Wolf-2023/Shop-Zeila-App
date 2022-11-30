@@ -8,7 +8,7 @@ import { Hero } from '../../pages/main-page/components/hero/Hero'
 import { Products } from '../../pages/main-page/components/products/Products'
 import { Services } from '../../pages/main-page/components/services/Services'
 import { ScrollUp } from '../../pages/main-page/components/small-components/ScrollUp'
-import { Title } from '../../pages/main-page/components/small-components/Title'
+import { Title } from '../../small-components/Title'
 import { Types } from '../../pages/main-page/components/types/Types'
 import {Fade } from 'react-reveal';
 import { Loader } from '../../pages/main-page/components/loader/Loader'

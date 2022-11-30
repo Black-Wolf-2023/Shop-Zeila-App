@@ -4,10 +4,11 @@ import { useState } from 'react';
 import { Loader } from '../main-page/components/loader/Loader';
 import {Hero} from './hero/Hero';
 import { Info } from './info/Info';
-import { Nav } from './nav/Nav';
+import { Nav } from '../../components/nav/Nav';
 import { Talk } from './talk/Talk';
 import {Contact} from "../main-page/components/contact/Contact";
 import {Footer} from '../../components/footer/Footer';
+import {ScrollUp} from "../main-page/components/small-components/ScrollUp";
 
 export const Contacting  = () => {
   const [loader__status,setLoader] = useState(false)
@@ -22,12 +23,13 @@ export const Contacting  = () => {
     {
       return loader__status ? 
       <>
-      <Nav/>
+      <Nav act={5}/>
       <Hero/>
       <Info/>
       <Talk/>
       <Contact/>
       <Footer/>
+      <ScrollUp/>
       </> : <Loader/>
     }
 }
