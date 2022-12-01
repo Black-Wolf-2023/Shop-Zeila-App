@@ -35,6 +35,10 @@ a:hover {
   color: #131726;
 }
 
+a {
+  color: #fff;
+}
+
 .size-14 {
   font-size: 14px;
 }
@@ -219,6 +223,10 @@ a:hover {
   font-size: 59px;
 }
 
+.size-60 {
+  font-size: 60px;
+}
+
 .font-400 {
   font-weight: 400;
 }
@@ -381,6 +389,18 @@ a, button {
 
 .scroll-up-controller {
   left: 20px !important;
+}
+
+@media screen and (max-width: 567px) {
+  #main-header-text {
+    font-size: 35px !important;
+  }
+}
+
+@media screen and (max-width: 567px) {
+  #main-text {
+    font-size: 17px !important;
+  }
 }
 
 header {
@@ -1396,6 +1416,7 @@ footer .container .footer-container .footer-sub .btn button {
   }
   .contact-hero .container .contact-hero-container .contact-hero-img img {
     width: 100%;
+    padding: 20px;
   }
 }
 .contact-hero .container .contact-hero-container .contact-hero-text {
@@ -1630,4 +1651,46 @@ footer .container .footer-container .footer-sub .btn button {
 .team-card-details .team-card-name :nth-child(2) {
   color: rgb(75, 121, 133);
   font-size: 1rem;
+}
+
+.counters .container {
+  width: 70%;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 1024px) {
+  .counters .container {
+    justify-content: center;
+    flex-direction: column;
+    gap: 100px;
+  }
+}
+
+.team-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0;
+  gap: 50px;
+  margin-top: 100px;
+}
+.team-cont .team-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 1024px) {
+  .team-cont .team-cards {
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=app.css.map */

@@ -1,0 +1,27 @@
+@use "../../index" as *;
+.counters{
+    .container{
+        width: 70%;
+        margin-top: 100px;
+        @include Flex(row,center,space-between,0);
+        flex-wrap: wrap;
+        @include Media(md){
+            justify-content: center;
+            flex-direction: column;
+            gap: 100px;
+        }
+    }
+}
+.team-cont{
+    @include Flex(column,center,center,0);
+    gap: 50px;
+    margin-top: 100px;
+    .team-cards{
+        @include Flex(row,center,center,0);
+        gap: 50px;
+        flex-wrap: wrap;
+        @include Media(md){
+            flex-direction: column;
+        }
+    }
+}

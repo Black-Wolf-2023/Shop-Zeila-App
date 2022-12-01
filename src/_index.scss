@@ -82,8 +82,11 @@ h1,h2,h3,h4{
 a:hover{
     color: $dark-blue-color-2;
 }
+a{
+    color: $white-color ;
+}
 
-@for $size from 14 to 60 {
+@for $size from 14 to 61 {
     .size-#{$size}{
         font-size: $size + px;
     }
@@ -177,4 +180,14 @@ a,button{
 }
 .scroll-up-controller{
     left: 20px !important;
+}
+#main-header-text{
+    @include Media(sm){
+        font-size: 35px !important;
+    }
+}
+#main-text{
+    @include Media(sm){
+        font-size: 17px !important;
+    }
 }
