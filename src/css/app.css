@@ -375,6 +375,14 @@ a, button {
   }
 }
 
+.sm-toggler-icon {
+  left: -100%;
+}
+
+.scroll-up-controller {
+  left: 20px !important;
+}
+
 header {
   display: flex;
   flex-direction: row;
@@ -882,9 +890,11 @@ main .main-container .main-img img {
 }
 
 .banner {
-  min-height: 600px;
+  min-height: 700px;
   background-image: linear-gradient(180deg, #131726, #252B42);
   margin-top: 150px;
+  position: relative;
+  overflow: hidden;
 }
 .banner .container {
   display: flex;
@@ -899,7 +909,6 @@ main .main-container .main-img img {
   justify-content: space-between;
   align-items: center;
   padding: 0 0;
-  position: relative;
   min-height: 600px;
   overflow: hidden;
   padding: 0 100px;
@@ -913,9 +922,10 @@ main .main-container .main-img img {
 }
 .banner .container .banner-container .banner-container-img {
   position: absolute;
-  width: 400px;
-  bottom: -2%;
-  right: 0%;
+  width: 450px;
+  height: 100%;
+  bottom: -15%;
+  right: 10%;
 }
 @media screen and (max-width: 1024px) {
   .banner .container .banner-container .banner-container-img {
@@ -938,7 +948,7 @@ main .main-container .main-img img {
   color: #fff;
 }
 .banner .container .banner-container .banner-content h1 {
-  font-size: 3rem;
+  font-size: 4rem;
   color: #fff;
 }
 .banner .container .banner-container .banner-content p {
@@ -1363,6 +1373,9 @@ footer .container .footer-container .footer-sub .btn button {
   color: #11c5dd;
 }
 
+.contact-hero {
+  margin-top: 50px;
+}
 .contact-hero .container .contact-hero-container {
   display: flex;
   flex-direction: row;
@@ -1402,6 +1415,19 @@ footer .container .footer-container .footer-sub .btn button {
   .contact-hero .container .contact-hero-container .contact-hero-text h1 {
     font-size: 3rem;
   }
+}
+.contact-hero .container .contact-hero-container .contact-hero-text button {
+  padding: 12px 30px;
+  border: 0;
+  outline: 0;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 500;
+  background-color: #2C5592;
+}
+.contact-hero .container .contact-hero-container .contact-hero-text button:hover {
+  background-color: #131726;
 }
 .contact-hero .container .contact-hero-container .contact-hero-text .contact-hero-phone {
   display: flex;

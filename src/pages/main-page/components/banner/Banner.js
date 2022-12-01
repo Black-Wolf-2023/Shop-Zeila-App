@@ -10,8 +10,7 @@ export const Banner = () => {
                 <div className='banner-content'>
                     <span>SUMMER {date.getFullYear()}</span>
                     <div className='banner-container-head'>
-                        <Fade left><h1>Vita Classic</h1></Fade>
-                        <Fade right><h1>Product</h1></Fade>
+                        <Fade left><h1>Vita Classic Product</h1></Fade>
                     </div>
                     <div className='banner-container-text'>
                         <Fade right><p>we know large objects will act. we know</p></Fade>

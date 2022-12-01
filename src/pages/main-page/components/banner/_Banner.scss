@@ -1,13 +1,14 @@
 @use '../../../../index.scss' as *;
 .banner{
-    min-height: 600px;
+    min-height: 700px;
     background-image:linear-gradient(180deg,$dark-blue-color-2,$dark-blue-color);
     margin-top: 150px;
+    position: relative;
+    overflow: hidden;
     .container{
         @include Flex(row,center,center,0);
         .banner-container{
             @include Flex(row,center,space-between,0);
-            position: relative;
             min-height: 600px;
             overflow: hidden;
             padding: 0 100px;
@@ -18,9 +19,10 @@
             }
             .banner-container-img{
                 position: absolute;
-                width: 400px;   
-                bottom: -2%; 
-                right: 0%;
+                width: 450px;
+                height: 100%;   
+                bottom: -15%; 
+                right: 10%;
                 @include Media(md){
                     display: none;
                 }
@@ -36,7 +38,7 @@
                     color: $white-color;
                 }
                 h1{
-                    font-size: 3rem;
+                    font-size: 4rem;
                     color: $white-color;
                 }
                 p{

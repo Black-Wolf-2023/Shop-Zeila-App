@@ -1,6 +1,7 @@
-@use "../../../index" as *;
+@use "../../index" as *;
 
 .contact-hero{
+    margin-top: 50px;
     .container{
         .contact-hero-container{
             @include Flex(row,center,space-between,0);
@@ -22,6 +23,19 @@
                     font-size: 4rem;
                     @include Media(sm){
                         font-size: 3rem;
+                    }
+                }
+                button{
+                    padding: 12px 30px;
+                    border: 0;
+                    outline: 0;
+                    border-radius: 4px;
+                    color: $white-color;
+                    font-size: 1.2rem;
+                    font-weight: 500;
+                    background-color: $light-blue-color-1;
+                    &:hover{
+                        background-color: $dark-blue-color-2;
                     }
                 }
                 .contact-hero-phone{

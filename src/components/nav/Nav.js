@@ -34,7 +34,7 @@ export const Nav = ({act}) => {
                 <ul>
                     <Bounce left><li><Link className={activity(0)} to="/">Home</Link></li></Bounce>
                     <Bounce right><li><Link className={activity(1)}>Shope</Link></li></Bounce>
-                    <Bounce left><li><Link className={activity(2)}>About</Link></li></Bounce>
+                    <Bounce left><li><Link className={activity(2)} to ="/about">About</Link></li></Bounce>
                     <Bounce right><li><Link  className={activity(3)}to='/team'>Team</Link></li></Bounce>
                     <Bounce left><li><Link className={activity(4)}>Pages</Link></li></Bounce>
                     <Bounce right><li><Link className={activity(5)} to='/contact'>Contact </Link></li></Bounce>

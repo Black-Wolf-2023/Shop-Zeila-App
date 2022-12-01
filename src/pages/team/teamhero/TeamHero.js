@@ -3,7 +3,7 @@ import { Fade } from 'react-reveal';
 import {Title} from "../../../small-components/Title";
 
 
-export const TeamHero = () => {
+export const TeamHero = ({src}) => {
   return (
     <div div className='team'>
       <Title dir="column-reverse" size="60px" title="Innovation tailored for you" text="WHAT WE DO"/>

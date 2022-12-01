@@ -2,7 +2,7 @@ import React from 'react'
 import { useEffect } from 'react';
 import { useState } from 'react';
 import { Loader } from '../main-page/components/loader/Loader';
-import {Hero} from './hero/Hero';
+import {Hero} from '../../components/hero/Hero';
 import { Info } from './info/Info';
 import { Nav } from '../../components/nav/Nav';
 import { Talk } from './talk/Talk';
@@ -24,7 +24,7 @@ export const Contacting  = () => {
       return loader__status ? 
       <>
       <Nav act={5}/>
-      <Hero/>
+      <Hero src={"./page-2-assets/main/Hero.svg"} status = {true} text__1 ="CONTACT US" head__text="Get in touch today!"/>
       <Info/>
       <Talk btn__text="Try free now" text="WE CAN'T WAIT TO MEET YOU" title="Let 's Talk"/>
       <Contact/>
