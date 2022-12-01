@@ -3,7 +3,7 @@ import { Add } from '../../pages/main-page/components/add/Add'
 import { Banner } from '../../pages/main-page/components/banner/Banner'
 import { Brannd } from '../../pages/main-page/components/brannd/Brannd'
 import { Contact } from '../../pages/main-page/components/contact/Contact'
-import { Footer } from '../../components/footer/Footer'
+import { Footer } from '../footer/Footer'
 import { Hero } from '../../pages/main-page/components/hero/Hero'
 import { Products } from '../../pages/main-page/components/products/Products'
 import { Services } from '../../pages/main-page/components/services/Services'
@@ -12,8 +12,8 @@ import { Title } from '../../small-components/Title'
 import { Types } from '../../pages/main-page/components/types/Types'
 import {Fade } from 'react-reveal';
 import { Loader } from '../../pages/main-page/components/loader/Loader'
-import {Header} from '../../components/header/Header';
-import {Nav} from '../../components/nav-bar/Nav';
+import {Header} from '../header/Header';
+import {Nav} from '../nav-bar/Nav';
 
 
 export const Home = () => {

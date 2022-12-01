@@ -5,8 +5,8 @@ import { Nav } from '../../components/nav/Nav'
 import { Loader } from '../main-page/components/loader/Loader'
 import { TeamCard } from './team-card/TeamCard'
 import { TeamHero } from './teamhero/TeamHero'
-import {Talk} from "../../pages/contact/talk/Talk";
-import {Contact} from '../../pages/main-page/components/contact/Contact';
+import {Talk} from "../contact/talk/Talk";
+import {Contact} from '../main-page/components/contact/Contact';
 import {ScrollUp} from "../../small-components/ScrollUp";
 import {Footer} from "../../components/footer/Footer";
 
