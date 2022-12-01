@@ -1,5 +1,5 @@
 import React from 'react'
-import { Contact__card } from '../../main-page/components/small-components/Contact__card';
+import { Contact__card } from '../../../small-components/Contact__card';
 import {Title} from "../../../small-components/Title";
 import data from '../../../data/data.json';
 import { Fade } from 'react-reveal';

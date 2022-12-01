@@ -1,5 +1,5 @@
 import React from 'react'
-import { ProductCard } from '../small-components/ProductCard'
+import { ProductCard } from '../../../../small-components/ProductCard'
 import {Fade} from 'react-reveal';
 
 export const Products = () => {

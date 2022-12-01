@@ -1497,11 +1497,14 @@ footer .container .footer-container .footer-sub .btn button {
   font-size: 18px;
   border: 0;
   border-radius: 5px;
-  background-color: #2C5592;
+  border: 1px solid #2C5592;
+  background-color: transparent;
+  color: #2C5592;
+  font-weight: 700;
 }
-
-body {
-  height: 10000px;
+.contact-talk .container .contact-talk-btn button:hover {
+  background-color: #2C5592;
+  color: #fff;
 }
 
 .team {
@@ -1517,13 +1520,18 @@ body {
   width: 100%;
   cursor: pointer;
 }
+.team h2 {
+  margin: 100px 0;
+  font-size: 3rem;
+  color: #131726;
+}
 @media screen and (max-width: 1024px) {
-  .team h1 {
+  .team h1, .team h2 {
     font-size: 50px !important;
   }
 }
 @media screen and (max-width: 567px) {
-  .team h1 {
+  .team h1, .team h2 {
     font-size: 30px !important;
   }
 }
@@ -1535,4 +1543,65 @@ body {
 .team .img-row-2 img {
   width: 100%;
   cursor: pointer;
+}
+.team .container {
+  display: grid;
+  grid-template-columns: repeat(3, 360px);
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 1024px) {
+  .team .container {
+    grid-template-columns: repeat(2, 360px);
+  }
+}
+@media screen and (max-width: 567px) {
+  .team .container {
+    grid-template-columns: repeat(1, 360px);
+  }
+}
+.team .container div {
+  margin-bottom: 30px;
+}
+
+.team-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0;
+  gap: 30px;
+  padding: 50px 0;
+}
+
+.team-card-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0;
+  gap: 30px;
+}
+.team-card-details .team-card-social {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0;
+  gap: 30px;
+}
+.team-card-details img {
+  cursor: pointer;
+}
+.team-card-details .team-card-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-align: center;
+}
+.team-card-details .team-card-name :nth-child(1) {
+  color: #131726;
+}
+.team-card-details .team-card-name :nth-child(2) {
+  color: rgb(75, 121, 133);
+  font-size: 1rem;
 }/*# sourceMappingURL=app.css.map */

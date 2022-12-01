@@ -12,7 +12,7 @@ export const Nav = ({act}) => {
     }
 
     function activity(index) {
-       return act == index ? "active-contact-nav-list" : null;
+       return act == index ? "active-contact-nav-list" : ' ';
     }
 
     useEffect(() => {

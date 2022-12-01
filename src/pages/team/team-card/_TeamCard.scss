@@ -1,0 +1,26 @@
+@use "../../../index" as *;
+
+.team-card-details{
+    @include Flex(column,center,center,0);
+    gap: 30px;
+    .team-card-social{
+        @include Flex(row,center,center,0);
+        gap: 30px;
+    }
+    img{
+        cursor: pointer;
+    }
+    .team-card-name{
+        font-size: 1.1rem;
+        font-weight: 700;
+        text-align: center;
+        :nth-child(1){
+            color: $dark-blue-color-2;
+        }
+        :nth-child(2){
+            color: $gray-color;
+            font-size: 1rem;
+        }
+    }
+}
+

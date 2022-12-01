@@ -1,8 +1,5 @@
 @use "../../../index" as * ;
 
-body{
-    height: 10000px;
-}
 .team{
     @include Flex(row,center ,space-evenly,0);
     gap: 30px;
@@ -13,7 +10,13 @@ body{
             cursor: pointer;
         }
     }
-    h1{
+    h2{
+        margin: 100px 0;
+        font-size: 3rem;
+        color: $dark-blue-color-2;
+    }
+
+     h1,h2{
         @include Media(md){
             font-size: 50px !important;
         }
@@ -30,4 +33,26 @@ body{
             cursor: pointer;
         }
     }
+
+    .container{
+        display: grid;
+        grid-template-columns: repeat(3,360px);
+        justify-content: center;
+        align-items: center;
+        @include Media(md){
+            grid-template-columns: repeat(2,360px);
+        }
+        @include Media(sm){
+            grid-template-columns: repeat(1,360px);
+        }
+        div{
+            margin-bottom: 30px
+        }
+    }
+
+}
+.team-icons{
+    @include Flex(row,center,center,0);
+    gap: 30px;
+    padding: 50px 0 ;
 }
