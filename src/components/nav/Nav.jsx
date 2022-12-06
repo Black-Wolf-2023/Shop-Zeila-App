@@ -24,12 +24,12 @@ export const Nav = ({act}) => {
     <div className= {scroll__nav__status ? 'contact-nav active-nav' : 'contact-nav'} >
         <div className='container'>
             <div className='contact-nav-logo-1'>
-                <img src="./Logo.svg" width="100px" height="100px" alt="Logo" />
+                <Link to ="/"><img src="./Logo.svg" width="80px" height="80px" alt="Logo" /></Link>
             </div>
             <div className='contact-nav-list'>
                 <div className={!contact__nav__toggle ? 'contact-logo-list' : 'contact-logo-list contact-logo-list-toggler'}>
                 <div className='contact-nav-logo-2'>
-                    <img src="./Logo.svg" width="80px" height="80px" alt="Logo" />
+                   <Link to ="/"><img src="./Logo.svg" width="80px" height="80px" alt="Logo" /></Link>
                 </div>
                 <ul>
                     <Bounce left><li><Link className={activity(0)} to="/">Home</Link></li></Bounce>
