@@ -1693,4 +1693,116 @@ footer .container .footer-container .footer-sub .btn button {
   .team-cont .team-cards {
     flex-direction: column;
   }
+}
+
+.details-product {
+  display: flex;
+  margin-top: 100px;
+  gap: 50px;
+}
+@media screen and (max-width: 1024px) {
+  .details-product {
+    flex-wrap: wrap;
+  }
+}
+.details-product .details-product-img {
+  width: 50%;
+}
+.details-product .details-product-img > img {
+  width: 100%;
+}
+@media screen and (max-width: 1024px) {
+  .details-product .details-product-img {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+.details-product .details-product-content .details-product-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 0;
+  padding: 40px;
+  gap: 10px;
+}
+@media screen and (max-width: 567px) {
+  .details-product .details-product-content .details-product-container {
+    padding: 20px;
+  }
+}
+.details-product .details-product-content .details-product-container .details-cont {
+  display: flex;
+  flex-direction: column;
+}
+.details-product .details-product-content .details-product-container .details-cont .like-dislike {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 0;
+  gap: 30px;
+  padding: 30px 0;
+  cursor: pointer;
+}
+.details-product .details-product-content .details-product-container .details-product-btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 0;
+}
+.details-product .details-product-content .details-product-container .details-product-btns .datails-product-main-btn {
+  margin-right: 30px;
+  border: 0;
+  outline: 0;
+  background-color: #2C5592;
+  color: #fff;
+  font-weight: 700;
+  padding: 10px 30px;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  border: 1px solid #2C5592;
+}
+@media screen and (max-width: 567px) {
+  .details-product .details-product-content .details-product-container .details-product-btns .datails-product-main-btn {
+    font-size: 1rem;
+  }
+}
+.details-product .details-product-content .details-product-container .details-product-btns .datails-product-main-btn:hover {
+  background-color: transparent;
+  color: #252B42;
+}
+.details-product .details-product-content .details-product-container .details-product-btns button:not(.datails-product-main-btn) {
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  border: 0;
+  outline: 0;
+  background-color: #fff;
+  box-shadow: 0.1px 0.1px 5px rgba(94, 93, 93, 0.527);
+  border-radius: 50%;
+  margin: 10px;
+  background-color: #11c5dd;
+}
+.details-product .details-product-content .details-product-container .details-product-btns button:not(.datails-product-main-btn):hover {
+  background-color: transparent;
+}
+
+@media screen and (max-width: 567px) {
+  .details-product-cards-container {
+    padding: 0 30px;
+  }
+}
+.details-product-cards-container .product-grid-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+@media screen and (max-width: 567px) {
+  .details-product-cards-container .product-grid-cards {
+    justify-content: center;
+    align-items: center;
+  }
 }/*# sourceMappingURL=app.css.map */

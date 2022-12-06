@@ -24,11 +24,12 @@ export const Home = () => {
       setLoader(true)
     },2000)
   },[])
+
   {
     return loader__status ? 
     <>
       <Header/>
-      <Nav/>
+      <Nav activer={true}/>
       <Hero/>
       <Brannd/>
       <Fade bottom><Title title="EDITOR'S PICK" text="problem trying to resolve the confilct between"/></Fade>

@@ -5,7 +5,7 @@ import { useState } from 'react';
 import { useEffect } from 'react';
 import { Bounce } from 'react-reveal';
 
-export const Nav = () => {
+export const Nav = ({activer}) => {
   const small__nav = useRef();
   const [toggle__icon ,setToggleIcon] = useState("./page-1-assets/icons/List.svg");
   const [active__nav,setActiveNav] = useState(false);
@@ -29,7 +29,7 @@ export const Nav = () => {
        <div className='nav-links'>
           <Bounce right><Link to='/'><div className='nav-logo'><img src="./Logo.svg" alt="" width='80px' height='80px'/></div></Link></Bounce>
            <ul className='font-700 size-18'>
-            <Bounce left><li><Link className='active-link'>Home</Link></li></Bounce>
+            <Bounce left><li><Link to='/' className= {activer ? 'active-link' : ""}>Home</Link></li></Bounce>
             <Bounce right><li><Link>Shope</Link></li></Bounce>
             <Bounce left><li><Link to="/about">About</Link></li></Bounce>
             <Bounce right><li><Link to='/team'>Team</Link></li></Bounce>
@@ -49,7 +49,7 @@ export const Nav = () => {
     </nav>
     <div className='sm-nav' ref={small__nav}>
          <ul className='font-700 size-18'>
-             <li><Link className='active-sm-link'>Home</Link></li>
+             <li><Link to='/' className={activer ? 'active-sm-link' : ""}>Home</Link></li>
              <li><Link>Shope</Link></li>
              <li><Link to ="/about">About</Link></li>
              <li><Link to='/team'>Team</Link></li>
