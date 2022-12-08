@@ -30,7 +30,7 @@ export const Nav = ({activer}) => {
           <Bounce right><Link to='/'><div className='nav-logo'><Link to ="/"><img src="./Logo.svg" alt="" width='80px' height='80px'/></Link></div></Link></Bounce>
            <ul className='font-700 size-18'>
             <Bounce left><li><Link to='/' className= {activer ? 'active-link' : ""}>Home</Link></li></Bounce>
-            <Bounce right><li><Link>Shope</Link></li></Bounce>
+            <Bounce right><li><Link  to = "/shop">Shope</Link></li></Bounce>
             <Bounce left><li><Link to="/about">About</Link></li></Bounce>
             <Bounce right><li><Link to='/team'>Team</Link></li></Bounce>
             <Bounce left><li><Link>Pages</Link></li></Bounce>
@@ -50,7 +50,7 @@ export const Nav = ({activer}) => {
     <div className='sm-nav' ref={small__nav}>
          <ul className='font-700 size-18'>
              <li><Link to='/' className={activer ? 'active-sm-link' : ""}>Home</Link></li>
-             <li><Link>Shope</Link></li>
+             <li><Link  to = "/shop">Shope</Link></li>
              <li><Link to ="/about">About</Link></li>
              <li><Link to='/team'>Team</Link></li>
              <li><Link>Pages</Link></li>

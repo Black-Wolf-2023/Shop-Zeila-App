@@ -1,0 +1,56 @@
+@use "../../../index" as *;
+
+.shop-banner{
+    margin: 100px 0;
+    .shop-banner-imgs{
+        @include Flex(column,center,flex-start,0);
+        gap: 80px;
+        .shop-content{
+            @include Flex(row,center,center,0);
+            flex-wrap: wrap;
+            gap: 50px;
+            .shop-box{
+                position: relative;
+                cursor: pointer;
+                .text{
+                    position: absolute;
+                    top: -100%;
+                    opacity: 0;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    font-weight: 900;
+                    width: 100%;
+                    text-align: center;
+                    font-size: 1.2rem;
+                    color: $white-color;
+                    visibility: hidden;
+                    pointer-events: none;
+                    @include Media(sm){
+                        font-size: 1rem;
+                    }
+                }
+                img{
+                    width: 200px;
+                    height: 200px;
+                    border-radius: 50%;
+                    @include Media(sm){
+                        width: 170px;
+                        height: 170px;
+                    }
+                }
+                &:hover{
+                    img{
+                        transform: scale(1.2,1.2) rotate(-20deg);
+                    }
+                    .text
+                    {
+                        top: 50%;
+                        opacity: 1;
+                        visibility: visible;
+                        pointer-events: all;
+                    }
+                }
+            }
+        }
+    }
+}

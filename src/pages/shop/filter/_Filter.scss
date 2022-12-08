@@ -1,0 +1,32 @@
+@use "../../../index" as *;
+
+
+.filter{
+    .container{
+        @include Flex(row,center,space-between,0);
+        padding: 100px 20px;
+        .items-count{
+            font-size: 1.4rem;
+            font-weight: 700;
+            @include Media(sm){
+                font-size: 1.3rem;
+            }
+        }
+        .filter-controller{
+            select{
+                padding: 10px 30px;
+                font-weight: 700;
+                font-size: 1.1rem;
+                cursor: pointer;
+                background-color: $light-blue-color-1;
+                color: $white-color;
+                border: 0;
+                outline: 0;
+                border-radius: 2px;
+                @include Media(sm){
+                    padding: 8px 20px;
+                }
+            }
+        }
+    }
+}

@@ -2,6 +2,7 @@
 #brannd-warbber{
     background-color: $white-color;
     padding: 30px 0;
+    margin-bottom: 100px;
     .brannd{
         .banner-animater .brannd-img:nth-child(1) img{
             animation-delay: .1s;
@@ -37,7 +38,14 @@
             @include Flex(row,center,center,0);
             gap: 150px;
             margin-top: 50px;
-            flex-wrap: wrap;
+            @include Media(md){
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+            }
+            @include Media(sm){
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+            }
             @keyframes branndAnimater {
                 from{
                     transform: scale(1,1);

@@ -1,7 +1,7 @@
 @use "../../index" as *;
 
 footer{
-    padding-bottom: 50px;
+    padding: 50px 0;
     .container{
         @include Flex(row,center,center,0);
         .footer-container{
