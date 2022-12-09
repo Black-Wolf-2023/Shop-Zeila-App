@@ -14,17 +14,15 @@ import {Fade } from 'react-reveal';
 import { Loader } from '../../pages/main-page/components/loader/Loader'
 import {Header} from '../header/Header';
 import {Nav} from '../nav-bar/Nav';
+import { useContext } from 'react'
+import { Context } from '../../context/Wallper'
 
 
 export const Home = () => {
-  const [loader__status,setLoader] = useState(false)
 
-  useEffect(() =>{
-    setTimeout(() => {
-      setLoader(true)
-    },2000)
-  },[])
+  const [loader__status,,setPages] = useContext(Context);
 
+  
   {
     return loader__status ? 
     <>

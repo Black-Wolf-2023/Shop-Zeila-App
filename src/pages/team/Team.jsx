@@ -9,18 +9,16 @@ import {Talk} from "../contact/talk/Talk";
 import {Contact} from '../main-page/components/contact/Contact';
 import {ScrollUp} from "../../small-components/ScrollUp";
 import {Footer} from "../../components/footer/Footer";
+import { useContext } from 'react'
+import { Context } from '../../context/Wallper'
+
 
 export const Team = () => {
-    const [loader__status,setLoader] = useState(false)
 
-    useEffect(() =>{
-      setTimeout(() => {
-        setLoader(true)
-      },2000)
-    },[])
+    const [loader__status] = useContext(Context);
 
 
-    
+
     { return loader__status ? <>
     
      <Nav act={3}/>

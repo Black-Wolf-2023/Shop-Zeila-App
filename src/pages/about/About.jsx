@@ -10,15 +10,15 @@ import {Brannd} from "../main-page/components/brannd/Brannd";
 import { Contact } from '../main-page/components/contact/Contact'
 import {Footer} from "../../components/footer/Footer"
 import {ScrollUp} from "../../small-components/ScrollUp";
+import { useContext } from 'react'
+import { Context } from '../../context/Wallper'
+
 
 export const About = () => {
-    const [loader__status,setLoader] = useState(false)
+    const [loader__status] = useContext(Context);
 
-    useEffect(() =>{
-      setTimeout(() => {
-        setLoader(true)
-      },2000)
-    },[])
+
+
 
     {
         return loader__status ? <>

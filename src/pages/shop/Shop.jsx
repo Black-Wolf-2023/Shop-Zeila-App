@@ -10,27 +10,23 @@ import {Products} from "../main-page/components/products/Products";
 import {Brannd} from "../main-page/components/brannd/Brannd";
 import {Footer} from "../../components/footer/Footer";
 import {ScrollUp} from "../../small-components/ScrollUp"
+import { Context } from '../../context/Wallper'
+import { useContext } from 'react'
 
 export const Shop = () => {
-    const [loader__status,setLoader] = useState(false)
+    const [loader__status] = useContext(Context);
 
-    useEffect(() =>{
-      setTimeout(() => {
-        setLoader(true)
-      },2000)
-    },[])
-
- {
-    return loader__status ? 
-    <>
-      <Header/>
-      <Nav act={1}/>
-      <ShopBanner/>
-      <Filter/>
-      <Products/>
-      <Brannd/>
-      <Footer/>
-      <ScrollUp/>
-    </> : <Loader/>
-  }
+    {
+        return loader__status ? 
+        <>
+          <Header/>
+          <Nav act={1}/>
+          <ShopBanner/>
+          <Filter/>
+          <Products/>
+          <Brannd/>
+          <Footer/>
+          <ScrollUp/>
+        </> : <Loader/>
+      }
 }

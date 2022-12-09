@@ -8,16 +8,15 @@ import { Product } from './product/Product'
 import {Brannd} from "../main-page/components/brannd/Brannd"
 import {Contact} from "../main-page/components/contact/Contact"
 import {Footer} from "../../components/footer/Footer"
+import { useContext } from 'react'
+import { Context } from '../../context/Wallper'
+
 
 export const Details = () => {
 
-   const [loader__status,setLoader] = useState(false)
+  const [loader__status] = useContext(Context);
 
-   useEffect(() =>{
-      setTimeout(() => {
-        setLoader(true)
-      },2000)
-    },[])
+ 
 
     {return loader__status ? <>
 
