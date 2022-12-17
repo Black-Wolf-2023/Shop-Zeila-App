@@ -3,8 +3,14 @@ import { Contact__card } from '../../../small-components/Contact__card';
 import {Title} from "../../../small-components/Title";
 import data from '../../../data/data.json';
 import { Bounce, Fade } from 'react-reveal';
+import { useEffect } from 'react';
 
 export const Info = () => {
+  useEffect(() =>{
+    window.scrollTo({
+      top:0
+    })
+  })
   return (
     <div className='contact-info'>
         <div className='container'>

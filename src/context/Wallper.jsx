@@ -1,52 +1,38 @@
 import React from 'react'
-import { useReducer } from 'react';
-import { useState } from 'react';
-import { useEffect } from 'react';
+import { useState ,useEffect } from 'react';
 import { createContext } from 'react'
-
+import axios from 'axios';
 
 export const Context = createContext();
-const GET = "GET";
+
+
 
 export const Wallper = ({children}) => {
-    const [loader__status,setLoader] = useState(false);
-    const [data,setData] = useState([]);
-    const [pages,setPages] = useState(30);
-
-    const options = {
-        method: 'GET',
-        headers: {
-            'X-RapidAPI-Key': '64ace71899msh8537b66ec114372p16cec5jsnae5338ca79ee',
-            'X-RapidAPI-Host': 'apidojo-hm-hennes-mauritz-v1.p.rapidapi.com'
-        }
-    };
+  
+  const [loader__status,setLoader] = useState(false);
+  const [data,setData] = useState([]);
+  const [catogrey__data,setCatogrey] = useState([]);
+  async function get__products(){
+    const response = await axios.get("https://fakestoreapi.com/products");
+    const products = await response.data;
     
-    
-    async function get__data(){
-        const products = await fetch(`https://apidojo-hm-hennes-mauritz-v1.p.rapidapi.com/products/list?country=us&lang=en&currentpage=0&pagesize=${pages}&categories=men_all&concepts=H%26M%20MAN`,options);
-        const response = await products.json();
-        setData(response.results);
-    }
+    const cat__response = await axios.get('https://api.escuelajs.co/api/v1/products');
+    const cat__product = await cat__response.data;
+    setCatogrey(cat__product);
+    setData(products);
+  }  
+  useEffect(() =>{
+    get__products();
+  },[])
 
-   useEffect(() => {
-     get__data();
-   },[])
-
-
-  useEffect(() => {
-    get__data();
-  },[pages]) 
-   useEffect(() => {
-      if(data.length > 0){
-         setLoader(true);
-        console.log(data);
-      }
-   },[data]) 
-
-
+  useEffect(() =>{
+     if(data.length > 9 && catogrey__data.length > 9){
+      setLoader(true);
+     }
+  },[data])
   return (
     <>
-    <Context.Provider value={[loader__status,data,setPages]}>
+    <Context.Provider value={[loader__status,data,catogrey__data,setData]}>
         {children}
     </Context.Provider>
     </>

@@ -17,7 +17,11 @@ import { Context } from '../../context/Wallper'
 export const About = () => {
     const [loader__status] = useContext(Context);
 
-
+    useEffect(() =>{
+        window.scrollTo({
+          top:0
+        })
+      })
 
 
     {

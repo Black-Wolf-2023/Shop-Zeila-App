@@ -30,7 +30,8 @@
         .product-container{
             width: 60%;
             display: grid;
-            grid-template-columns: repeat(auto-fill,180px);
+            grid-template-columns: repeat(auto-fill,200px);
+            padding: 20px;
             grid-gap: 20px;
             grid-row-gap: 70px;
             justify-content: center;
@@ -43,28 +44,50 @@
         }
     }
 }
-.product-card-image{
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
-}
-.product-card-image::after{
-    content: 'SEE NOW !';
-    position: absolute;
-    height: 100%;
-    width: 0;
-    left: 0;
-    top: 0;
-    transform: rotate(60deg);
-    background-color: rgba($color: $dark-blue-color-2, $alpha: .4);
-    backdrop-filter: blur(10px);
-    z-index: 1;
-    transform-origin: top left;
-    @include Flex(row,center,center,0);
-    color: $white-color;
-    font-weight: 700;
-}
-.product-card-image:hover::after{
-    width: 100%;
-    transform: rotate(0deg);
+.product-card{
+    @include Flex(column,center,space-between,0px);
+    gap: 30px;
+
+    .product-card-price{
+        @include Flex(column,flex-start,space-between,0px);
+        .wallper{
+            @include Flex(row,flex-start,space-between,0px);
+            width: 100%;
+        }
+    }
+    .product-card-image{
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        object-fit: cover;
+        width: 200px;
+        min-height: 300px;
+        border-radius: 10;
+        background-color: $white-color;
+        @include Flex(row,center,center,20px);
+        img{
+            width: 100%;
+        }
+    }
+    .product-card-image::after{
+        content: 'SEE NOW !';
+        position: absolute;
+        height: 100%;
+        width: 0;
+        left: 0;
+        top: 0;
+        transform: rotate(60deg);
+        background-color: rgba($color: $dark-blue-color-2, $alpha: .4);
+        backdrop-filter: blur(10px);
+        z-index: 1;
+        transform-origin: top left;
+        @include Flex(row,center,center,0);
+        color: $white-color;
+        font-weight: 700;
+        pointer-events: none;
+    }
+    .product-card-image:hover::after{
+        width: 100%;
+        transform: rotate(0deg);
+    }
 }

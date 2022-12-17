@@ -1,25 +1,28 @@
 import React from 'react'
 import { ProductCard } from '../../../../small-components/ProductCard'
 import {Fade} from 'react-reveal';
+import { useContext } from 'react';
+import { Context } from '../../../../context/Wallper';
+import { useEffect } from 'react';
+import { useState } from 'react';
+import { Link} from 'react-router-dom';
 
 export const Products = () => {
+  const [,data] = useContext(Context);
+  const [currentData,setCurrent] = useState(data.filter((e,i) => i < 12));
+  const [catogrey,setCatogrey] = useState();
   return (
     <div className='products'>
         <div className='container'>
             <div className='product-container'>
-               <Fade right><ProductCard src="./page-1-assets/main/product-1.png" head="Graphic Design" text="English Department" price__1={19.2} price__2={15.4}/></Fade>
-               <Fade left><ProductCard src="./page-1-assets/main/product-2.png" head="Graphic Design" text="English Department" price__1={19.2} price__2={15.4}/></Fade>
-               <Fade right><ProductCard src="./page-1-assets/main/product-3.png" head="Graphic Design" text="English Department" price__1={19.2} price__2={15.4}/></Fade>
-               <Fade left><ProductCard src="./page-1-assets/main/product-4.png" head="Graphic Design" text="English Department" price__1={19.2} price__2={15.4}/></Fade>
-               <Fade right><ProductCard src="./page-1-assets/main/product-5.png" head="Graphic Design" text="English Department" price__1={19.2} price__2={15.4}/></Fade>
-               <Fade left><ProductCard src="./page-1-assets/main/product-6.png" head="Graphic Design" text="English Department" price__1={19.2} price__2={15.4}/></Fade>
-               <Fade right><ProductCard src="./page-1-assets/main/product-7.png" head="Graphic Design" text="English Department" price__1={19.2} price__2={15.4}/></Fade>
-               <Fade left><ProductCard src="./page-1-assets/main/product-8.png" head="Graphic Design" text="English Department" price__1={19.2} price__2={15.4}/></Fade>
-               <Fade right><ProductCard src="./page-1-assets/main/product-9.png" head="Graphic Design" text="English Department" price__1={19.2} price__2={15.4}/></Fade>
-               <Fade left><ProductCard src="./page-1-assets/main/product-1.png" head="Graphic Design" text="English Department" price__1={19.2} price__2={15.4}/></Fade>
+              {currentData.map((e,i) => 
+               <Link to={`/details/${i+1}`} key={i}>
+                  <Fade right><ProductCard src={e.image} head={Array.from(e.title).filter((e,i) => i < 19)} text="English Department" price__1={Math.round(e.price/.3)} price__2={e.price}/></Fade>
+               </Link>
+              )}
             </div>
         </div>
-        <Fade bottom><button>SEE MORE PRODUCTS</button></Fade>
+        <Fade bottom><Link to="/shop"><button>SEE MORE PRODUCTS</button></Link></Fade>
     </div>
   )
 }

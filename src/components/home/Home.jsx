@@ -20,7 +20,7 @@ import { Context } from '../../context/Wallper'
 
 export const Home = () => {
 
-  const [loader__status,,setPages] = useContext(Context);
+  const [loader__status] = useContext(Context);
 
   
   {

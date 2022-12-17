@@ -16,6 +16,13 @@ import { useContext } from 'react'
 export const Shop = () => {
     const [loader__status] = useContext(Context);
 
+    useEffect(() =>{
+      window.scrollTo({
+        top:0
+      })
+    })
+
+
     {
         return loader__status ? 
         <>

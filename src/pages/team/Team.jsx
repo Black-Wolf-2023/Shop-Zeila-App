@@ -16,7 +16,12 @@ import { Context } from '../../context/Wallper'
 export const Team = () => {
 
     const [loader__status] = useContext(Context);
-
+    
+    useEffect(() =>{
+      window.scrollTo({
+        top:0
+      })
+    })
 
 
     { return loader__status ? <>

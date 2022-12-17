@@ -15,6 +15,11 @@ import { Context } from '../../context/Wallper'
 export const Contacting  = () => {
   const [loader__status] = useContext(Context);
 
+  useEffect(() =>{
+    window.scrollTo({
+      top:0
+    })
+  })
 
 
     {

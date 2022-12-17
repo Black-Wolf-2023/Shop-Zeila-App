@@ -24,12 +24,12 @@ export const Nav = ({act}) => {
     <div className= {scroll__nav__status ? 'contact-nav active-nav' : 'contact-nav'} >
         <div className='container'>
             <div className='contact-nav-logo-1'>
-                <Link to ="/"><img src="./Logo.svg" width="80px" height="80px" alt="Logo" /></Link>
+                <Link to ="/"><img src="/Logo.svg" width="80px" height="80px" alt="Logo" /></Link>
             </div>
             <div className='contact-nav-list'>
                 <div className={!contact__nav__toggle ? 'contact-logo-list' : 'contact-logo-list contact-logo-list-toggler'}>
                 <div className='contact-nav-logo-2'>
-                   <Link to ="/"><img src="./Logo.svg" width="80px" height="80px" alt="Logo" /></Link>
+                   <Link to ="/"><img src="/Logo.svg" width="80px" height="80px" alt="Logo" /></Link>
                 </div>
                 <ul>
                     <Bounce left><li><Link className={activity(0)} to="/">Home</Link></li></Bounce>
@@ -48,8 +48,8 @@ export const Nav = ({act}) => {
             <div className='contact-nav-toggler' onClick={nav__toggle}>
                {
                 !contact__nav__toggle ?  
-                <img src="./page-1-assets/icons/List.svg" alt="" /> :  
-                <img src="./page-1-assets/icons/close.svg" alt="" />
+                <img src="/page-1-assets/icons/List.svg" alt="" /> :  
+                <img src="/page-1-assets/icons/close.svg" alt="" />
                }
             </div>
         </div>

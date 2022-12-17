@@ -8,13 +8,29 @@
         flex-wrap: wrap;
     }
     .details-product-img{
+        @include Flex(column,flex-start,space-between,0);
+        gap: 100px;
        > img{
-            width: 100%;
+            max-width:400px;
+            max-height: 400px;
+            background-color: $white-color;
+            padding: 20px;
         }
         width: 50%;
         @include Media(md){
             width: 90%;
             margin: 0 auto;
+        }
+        .sm-img-details{
+            @include Flex(row,center,center,0);
+            width: 100%;
+            gap: 20px;
+            cursor: pointer;
+            border-radius: 4px;
+            overflow: hidden;
+            img{
+                max-width: 100px;
+            }
         }
     }
     .details-product-content{

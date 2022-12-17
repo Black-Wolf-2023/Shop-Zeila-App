@@ -872,7 +872,8 @@ main .main-container .main-img img {
 .products .container .product-container {
   width: 60%;
   display: grid;
-  grid-template-columns: repeat(auto-fill, 180px);
+  grid-template-columns: repeat(auto-fill, 200px);
+  padding: 20px;
   grid-gap: 20px;
   grid-row-gap: 70px;
   justify-content: center;
@@ -888,13 +889,48 @@ main .main-container .main-img img {
   }
 }
 
-.product-card-image {
+.product-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0px;
+  gap: 30px;
+}
+.product-card .product-card-price {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0 0px;
+}
+.product-card .product-card-price .wallper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0 0px;
+  width: 100%;
+}
+.product-card .product-card-image {
   cursor: pointer;
   position: relative;
   overflow: hidden;
+  object-fit: cover;
+  width: 200px;
+  min-height: 300px;
+  border-radius: 10;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
 }
-
-.product-card-image::after {
+.product-card .product-card-image img {
+  width: 100%;
+}
+.product-card .product-card-image::after {
   content: "SEE NOW !";
   position: absolute;
   height: 100%;
@@ -913,9 +949,9 @@ main .main-container .main-img img {
   padding: 0 0;
   color: #fff;
   font-weight: 700;
+  pointer-events: none;
 }
-
-.product-card-image:hover::after {
+.product-card .product-card-image:hover::after {
   width: 100%;
   transform: rotate(0deg);
 }
@@ -1729,16 +1765,40 @@ footer .container .footer-container .footer-sub .btn button {
   }
 }
 .details-product .details-product-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0 0;
+  gap: 100px;
   width: 50%;
 }
 .details-product .details-product-img > img {
-  width: 100%;
+  max-width: 400px;
+  max-height: 400px;
+  background-color: #fff;
+  padding: 20px;
 }
 @media screen and (max-width: 1024px) {
   .details-product .details-product-img {
     width: 90%;
     margin: 0 auto;
   }
+}
+.details-product .details-product-img .sm-img-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0;
+  width: 100%;
+  gap: 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.details-product .details-product-img .sm-img-details img {
+  max-width: 100px;
 }
 .details-product .details-product-content .details-product-container {
   width: 100%;
